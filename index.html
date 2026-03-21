@@ -182,6 +182,11 @@
       font-weight:700;
       color:#314327;
       position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      line-height:1.15;
+      text-align:center;
     }
 
     .nav a::after{
@@ -197,6 +202,15 @@
 
     .nav a:hover::after{
       width:100%;
+    }
+
+    .nav-thai{
+      font-family:'Noto Serif Thai', serif;
+      font-size:0.72rem;
+      font-weight:600;
+      color:var(--gold);
+      margin-top:4px;
+      letter-spacing:0.01em;
     }
 
     .header-actions{
@@ -954,11 +968,11 @@
       </a>
 
       <nav class="nav">
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#studio">Studio</a>
-        <a href="#gutscheine">Gutscheine</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#ueber-uns">Über uns<br><span class="nav-thai">เกี่ยวกับเรา</span></a>
+        <a href="#leistungen">Leistungen<br><span class="nav-thai">บริการ</span></a>
+        <a href="#studio">Studio<br><span class="nav-thai">สตูดิโอ</span></a>
+        <a href="#gutscheine">Gutscheine<br><span class="nav-thai">บัตรกำนัล</span></a>
+        <a href="#kontakt">Kontakt<br><span class="nav-thai">ติดต่อ</span></a>
       </nav>
 
       <div class="header-actions">
