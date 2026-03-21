@@ -202,7 +202,6 @@
       color:var(--gold);
       margin-top:4px;
       letter-spacing:0.01em;
-      line-height:1.15;
     }
 
     .header-actions{
@@ -439,6 +438,24 @@
       right:0;
     }
 
+    .word-stack{
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      line-height:1.05;
+    }
+
+    .word-stack-thai{
+      margin-top:10px;
+      font-family:'Noto Serif Thai', serif;
+      font-size:0.42em;
+      font-weight:600;
+      letter-spacing:0.01em;
+      color:var(--gold);
+      text-transform:none;
+      line-height:1.2;
+    }
+
     .section-head h2{
       font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:clamp(2rem, 4vw, 3rem);
@@ -456,18 +473,6 @@
       margin:12px auto 0;
       background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,1), rgba(197,165,106,0));
       border-radius:999px;
-    }
-
-    .section-thai{
-      display:block;
-      margin-top:10px;
-      font-family:'Noto Serif Thai', serif;
-      font-size:0.42em;
-      font-weight:600;
-      letter-spacing:0.01em;
-      color:var(--gold);
-      text-transform:none;
-      line-height:1.2;
     }
 
     .section-head p{
@@ -724,17 +729,6 @@
       font-size:2rem;
       color:var(--green-dark);
       margin-bottom:14px;
-    }
-
-    .gift-copy h3 .section-thai{
-      display:block;
-      margin-top:10px;
-      font-family:'Noto Serif Thai', serif;
-      font-size:0.42em;
-      font-weight:600;
-      color:var(--gold);
-      line-height:1.2;
-      text-transform:none;
     }
 
     .gift-copy p{
@@ -1036,10 +1030,13 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Über uns</span>
-          <h2>
-            Persönlich, hochwertig und auf Entspannung ausgerichtet
-            <span class="section-thai">เกี่ยวกับเรา</span>
-          </h2>
+          <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
+          <p>
+            <span class="word-stack">
+              <span>Über uns</span>
+              <span class="word-stack-thai">เกี่ยวกับเรา</span>
+            </span>
+          </p>
           <p>
             Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
             einem modernen, harmonischen Studio. Die persönliche Note und das
@@ -1079,10 +1076,13 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Leistungen</span>
-          <h2>
-            Strukturiert dargestellt und direkt anfragbar
-            <span class="section-thai">บริการ</span>
-          </h2>
+          <h2>Strukturiert dargestellt und direkt anfragbar</h2>
+          <p>
+            <span class="word-stack">
+              <span>Leistungen</span>
+              <span class="word-stack-thai">บริการ</span>
+            </span>
+          </p>
           <p>
             Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
             verknüpft, damit Besucher sofort handeln können.
@@ -1166,10 +1166,13 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Studio</span>
-          <h2>
-            Sauber geordnete Studioeinblicke
-            <span class="section-thai">สตูดิโอ</span>
-          </h2>
+          <h2>Sauber geordnete Studioeinblicke</h2>
+          <p>
+            <span class="word-stack">
+              <span>Studio</span>
+              <span class="word-stack-thai">สตูดิโอ</span>
+            </span>
+          </p>
           <p>
             Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
           </p>
@@ -1213,10 +1216,13 @@
 
           <div class="card gift-copy">
             <span class="eyebrow">Gutscheine</span>
-            <h3>
-              Entspannung stilvoll verschenken
-              <span class="section-thai">บัตรกำนัล</span>
-            </h3>
+            <h3>Entspannung stilvoll verschenken</h3>
+            <p>
+              <span class="word-stack">
+                <span>Gutscheine</span>
+                <span class="word-stack-thai">บัตรกำนัล</span>
+              </span>
+            </p>
             <p>
               Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
               oder besondere Anlässe.
@@ -1238,10 +1244,13 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Kontakt</span>
-          <h2>
-            Direkt anfragen und Standort ansehen
-            <span class="section-thai">ติดต่อ</span>
-          </h2>
+          <h2>Direkt anfragen und Standort ansehen</h2>
+          <p>
+            <span class="word-stack">
+              <span>Kontakt</span>
+              <span class="word-stack-thai">ติดต่อ</span>
+            </span>
+          </p>
           <p>
             Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
             Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
