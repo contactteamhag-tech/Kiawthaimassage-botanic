@@ -7,13 +7,13 @@
   <title>Kiaw Thaimassage & Wellness – Traditionelle Thai Massage in Frechen</title>
   <meta
     name="description"
-    content="Kiaw Thaimassage & Wellness in Frechen – traditionelle Thai-Massagen, Aromaöl, Hot Stone und Kräuterstempel in stilvoller Atmosphäre. Jetzt Termin per Telefon oder WhatsApp anfragen."
+    content="Kiaw Thaimassage & Wellness in Frechen – traditionelle Thai Massage, Aromaöl, Hot Stone und Kräuterstempel in stilvoller Atmosphäre. Termin direkt per WhatsApp oder Telefon anfragen."
   />
   <meta
     name="keywords"
-    content="Kiaw Thaimassage, Thai Massage Frechen, Wellness Frechen, Aromaöl Massage Frechen, Hot Stone Massage Frechen, Kräuterstempel Massage Frechen"
+    content="Kiaw Thaimassage, Thai Massage Frechen, Wellness Frechen, Aromaöl Massage, Hot Stone, Kräuterstempel"
   />
-  <meta name="theme-color" content="#6d9f3a" />
+  <meta name="theme-color" content="#6e9b3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,20 +24,20 @@
 
   <style>
     :root{
-      --green:#6d9f3a;
-      --green-dark:#456b21;
-      --green-soft:#edf5e4;
-      --gold:#c8a86b;
-      --text:#1f2a1c;
-      --muted:#5e6659;
+      --green:#6e9b3a;
+      --green-dark:#456825;
+      --green-soft:#eef5e8;
+      --gold:#c5a56a;
+      --text:#23301f;
+      --muted:#667060;
       --white:#ffffff;
-      --line:rgba(69,107,33,0.14);
-      --shadow:0 18px 50px rgba(31,42,28,0.10);
-      --shadow-soft:0 10px 30px rgba(31,42,28,0.08);
-      --radius-xl:28px;
+      --line:rgba(69,104,37,0.12);
+      --shadow:0 20px 60px rgba(28,39,22,0.10);
+      --shadow-soft:0 10px 30px rgba(28,39,22,0.08);
+      --radius-xl:30px;
       --radius-lg:22px;
       --radius-md:16px;
-      --container:1200px;
+      --container:1240px;
     }
 
     *{
@@ -53,15 +53,15 @@
     body{
       font-family:'Inter',sans-serif;
       color:var(--text);
-      background:
-        linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
-        url("images/patternkiaw.webp") center top / cover fixed no-repeat;
       line-height:1.6;
+      background:
+        linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+        url("images/patternkiaw.webp") center top / cover fixed no-repeat;
     }
 
     img{
-      max-width:100%;
       display:block;
+      max-width:100%;
     }
 
     a{
@@ -82,81 +82,73 @@
     }
 
     .topbar-inner{
-      min-height:48px;
+      min-height:46px;
       display:flex;
-      align-items:center;
       justify-content:space-between;
+      align-items:center;
       gap:18px;
       flex-wrap:wrap;
       padding:10px 0;
-    }
-
-    .topbar-left,
-    .topbar-right{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-      align-items:center;
     }
 
     .header{
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(255,255,255,0.9);
+      background:rgba(255,255,255,0.92);
       backdrop-filter:blur(14px);
-      border-bottom:1px solid rgba(69,107,33,0.08);
+      border-bottom:1px solid rgba(69,104,37,0.08);
     }
 
     .header-inner{
-      min-height:88px;
+      min-height:94px;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:28px;
+      gap:26px;
     }
 
     .brand{
       display:flex;
       align-items:center;
-      gap:14px;
+      gap:16px;
       min-width:0;
     }
 
-    .brand img{
-      width:74px;
-      height:74px;
+    .brand-logo{
+      width:190px;
+      max-width:38vw;
       object-fit:contain;
-      border-radius:18px;
-      background:#fff;
     }
 
     .brand-text{
-      min-width:0;
+      display:flex;
+      flex-direction:column;
     }
 
     .brand-title{
-      font-size:1.2rem;
+      font-size:1.05rem;
       font-weight:800;
-      letter-spacing:0.02em;
       color:var(--green-dark);
+      letter-spacing:0.03em;
     }
 
     .brand-sub{
-      font-size:0.92rem;
+      font-size:0.9rem;
       color:var(--muted);
+      font-weight:600;
     }
 
     .nav{
       display:flex;
+      gap:24px;
       align-items:center;
-      gap:26px;
       flex-wrap:wrap;
     }
 
     .nav a{
       font-weight:700;
-      color:#33412b;
+      color:#314327;
       position:relative;
     }
 
@@ -175,23 +167,22 @@
       width:100%;
     }
 
-    .nav-cta{
+    .header-actions{
       display:flex;
       gap:12px;
       align-items:center;
+      flex-wrap:wrap;
     }
 
     .btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      gap:10px;
-      border:none;
-      border-radius:999px;
+      gap:8px;
       padding:14px 22px;
+      border-radius:999px;
       font-weight:800;
-      font-size:0.98rem;
-      cursor:pointer;
+      font-size:0.96rem;
       transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
       box-shadow:var(--shadow-soft);
     }
@@ -212,141 +203,138 @@
     .btn-secondary{
       background:#fff;
       color:var(--green-dark);
-      border:1px solid rgba(69,107,33,0.14);
+      border:1px solid rgba(69,104,37,0.14);
     }
 
     .hero{
-      position:relative;
-      overflow:hidden;
-      padding:84px 0 54px;
+      padding:70px 0 52px;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.1fr 0.9fr;
-      gap:38px;
+      grid-template-columns:1.02fr 0.98fr;
+      gap:34px;
       align-items:center;
     }
 
     .hero-copy{
-      background:rgba(255,255,255,0.76);
+      background:rgba(255,255,255,0.78);
+      border:1px solid rgba(69,104,37,0.08);
       backdrop-filter:blur(10px);
-      border:1px solid rgba(69,107,33,0.08);
-      border-radius:32px;
-      padding:40px;
+      border-radius:34px;
+      padding:42px;
       box-shadow:var(--shadow);
     }
 
     .eyebrow{
       display:inline-flex;
       align-items:center;
-      gap:10px;
       border-radius:999px;
-      padding:8px 14px;
       background:var(--green-soft);
       color:var(--green-dark);
       font-weight:800;
-      letter-spacing:0.02em;
+      letter-spacing:0.04em;
+      font-size:0.82rem;
+      padding:9px 14px;
       margin-bottom:18px;
+      text-transform:uppercase;
     }
 
     .hero h1{
       font-family:'Playfair Display',serif;
-      font-size:clamp(2.6rem, 5vw, 4.8rem);
-      line-height:1.02;
-      color:#234017;
-      margin-bottom:18px;
+      font-size:clamp(2.6rem,5vw,4.9rem);
+      line-height:1.03;
+      color:#243d18;
+      margin-bottom:16px;
     }
 
     .hero p{
       font-size:1.08rem;
-      color:#465140;
-      max-width:700px;
+      color:#4f5849;
+      max-width:720px;
     }
 
     .hero-actions{
       display:flex;
       gap:14px;
       flex-wrap:wrap;
-      margin-top:28px;
+      margin-top:26px;
     }
 
-    .hero-points{
+    .hero-facts{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-columns:repeat(3, minmax(0,1fr));
       gap:14px;
       margin-top:28px;
     }
 
-    .hero-point{
+    .hero-fact{
       background:#fff;
       border:1px solid var(--line);
       border-radius:18px;
-      padding:16px 18px;
+      padding:16px;
       box-shadow:var(--shadow-soft);
     }
 
-    .hero-point strong{
+    .hero-fact strong{
       display:block;
       font-size:1rem;
       color:var(--green-dark);
       margin-bottom:4px;
     }
 
-    .hero-point span{
-      font-size:0.94rem;
+    .hero-fact span{
       color:var(--muted);
+      font-size:0.93rem;
     }
 
     .hero-visual{
       position:relative;
     }
 
-    .hero-main-card{
-      position:relative;
+    .hero-image{
       border-radius:36px;
       overflow:hidden;
-      box-shadow:0 26px 70px rgba(31,42,28,0.18);
-      min-height:640px;
-      background:#dfe9d1;
+      box-shadow:0 28px 70px rgba(28,39,22,0.17);
+      background:#e6eddc;
     }
 
-    .hero-main-card img{
+    .hero-image img{
       width:100%;
-      height:640px;
+      height:680px;
       object-fit:cover;
     }
 
-    .hero-floating{
+    .hero-card{
       position:absolute;
-      left:-22px;
-      bottom:22px;
-      width:min(290px, 56%);
+      right:-18px;
+      bottom:20px;
+      width:min(290px, 72%);
       background:rgba(255,255,255,0.96);
       border:1px solid var(--line);
       border-radius:24px;
-      padding:18px;
+      padding:20px;
       box-shadow:var(--shadow);
     }
 
-    .hero-floating-title{
-      font-weight:800;
+    .hero-card h3{
       color:var(--green-dark);
+      font-size:1.08rem;
       margin-bottom:8px;
     }
 
-    .hero-floating p{
-      font-size:0.95rem;
+    .hero-card p{
       color:var(--muted);
+      font-size:0.95rem;
     }
 
     .section{
-      padding:82px 0;
+      padding:84px 0;
     }
 
     .section-head{
-      max-width:760px;
-      margin:0 auto 40px;
+      max-width:780px;
+      margin:0 auto 42px;
       text-align:center;
     }
 
@@ -355,17 +343,17 @@
       margin-bottom:12px;
       color:var(--green-dark);
       font-weight:800;
-      letter-spacing:0.08em;
+      letter-spacing:.08em;
       text-transform:uppercase;
       font-size:0.8rem;
     }
 
     .section-head h2{
       font-family:'Playfair Display',serif;
-      font-size:clamp(2rem,4vw,3rem);
+      font-size:clamp(2rem, 4vw, 3rem);
       line-height:1.08;
+      color:#263e1b;
       margin-bottom:14px;
-      color:#253f19;
     }
 
     .section-head p{
@@ -373,23 +361,22 @@
       font-size:1.02rem;
     }
 
-    .about-grid{
-      display:grid;
-      grid-template-columns:0.95fr 1.05fr;
-      gap:34px;
-      align-items:stretch;
-    }
-
     .card{
-      background:rgba(255,255,255,0.9);
+      background:rgba(255,255,255,0.92);
       border:1px solid var(--line);
       border-radius:var(--radius-xl);
       box-shadow:var(--shadow-soft);
     }
 
+    .about-grid{
+      display:grid;
+      grid-template-columns:0.9fr 1.1fr;
+      gap:28px;
+      align-items:stretch;
+    }
+
     .about-image{
       overflow:hidden;
-      min-height:100%;
     }
 
     .about-image img{
@@ -399,7 +386,7 @@
     }
 
     .about-copy{
-      padding:34px;
+      padding:36px;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -408,23 +395,23 @@
     .about-copy h3{
       font-family:'Playfair Display',serif;
       font-size:2rem;
-      margin-bottom:18px;
       color:var(--green-dark);
+      margin-bottom:16px;
     }
 
     .about-copy p{
-      color:#4a5543;
+      color:#4f5949;
       margin-bottom:14px;
     }
 
-    .about-list{
+    .about-points{
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
+      grid-template-columns:repeat(2, minmax(0,1fr));
       gap:14px;
-      margin-top:16px;
+      margin-top:8px;
     }
 
-    .about-item{
+    .about-point{
       background:#fff;
       border:1px solid var(--line);
       border-radius:18px;
@@ -435,7 +422,7 @@
 
     .services-grid{
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
+      grid-template-columns:repeat(2, minmax(0,1fr));
       gap:22px;
     }
 
@@ -446,15 +433,15 @@
     .service-top{
       display:flex;
       justify-content:space-between;
+      gap:14px;
       align-items:flex-start;
-      gap:16px;
       margin-bottom:14px;
     }
 
     .service-card h3{
       font-family:'Playfair Display',serif;
-      font-size:1.55rem;
-      color:#2a421d;
+      font-size:1.5rem;
+      color:#29401d;
     }
 
     .badge{
@@ -469,21 +456,21 @@
 
     .service-card p{
       color:var(--muted);
-      margin-bottom:18px;
+      margin-bottom:16px;
     }
 
     .service-prices{
       display:grid;
       gap:10px;
-      margin-bottom:18px;
+      margin-bottom:20px;
     }
 
     .service-prices div{
       display:flex;
       justify-content:space-between;
-      gap:14px;
+      gap:12px;
       padding-bottom:10px;
-      border-bottom:1px dashed rgba(69,107,33,0.16);
+      border-bottom:1px dashed rgba(69,104,37,0.16);
       font-weight:700;
     }
 
@@ -499,16 +486,16 @@
 
     .table-wrap{
       overflow:auto;
-      border-radius:24px;
-      box-shadow:var(--shadow-soft);
       border:1px solid var(--line);
-      background:rgba(255,255,255,0.94);
+      border-radius:24px;
+      background:rgba(255,255,255,0.96);
+      box-shadow:var(--shadow-soft);
     }
 
     table{
       width:100%;
       border-collapse:collapse;
-      min-width:760px;
+      min-width:780px;
     }
 
     thead th{
@@ -517,80 +504,63 @@
       text-align:left;
       padding:18px 20px;
       font-size:0.95rem;
-      letter-spacing:0.02em;
+      letter-spacing:.02em;
     }
 
     tbody td{
       padding:18px 20px;
-      border-bottom:1px solid rgba(69,107,33,0.10);
+      border-bottom:1px solid rgba(69,104,37,0.09);
       vertical-align:top;
     }
 
     tbody tr:nth-child(even){
-      background:rgba(237,245,228,0.35);
+      background:rgba(238,245,232,0.42);
     }
 
-    tbody tr:hover{
-      background:rgba(237,245,228,0.55);
-    }
-
-    .note-boxes{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:18px;
-      margin-top:24px;
-    }
-
-    .note-box{
-      background:rgba(255,255,255,0.92);
-      border:1px solid var(--line);
-      border-radius:20px;
-      padding:20px;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .note-box h4{
-      color:var(--green-dark);
-      margin-bottom:8px;
-      font-size:1.05rem;
-    }
-
-    .note-box p{
-      color:var(--muted);
-      font-size:0.96rem;
-    }
-
-    .gallery-grid{
+    .studio-grid{
       display:grid;
       grid-template-columns:1.15fr 0.85fr 0.85fr;
       gap:18px;
     }
 
-    .gallery-card{
+    .studio-card{
       overflow:hidden;
+      min-height:280px;
       position:relative;
-      min-height:290px;
     }
 
-    .gallery-card img{
+    .studio-card img{
       width:100%;
       height:100%;
       object-fit:cover;
-      transition:transform .5s ease;
+      transition:transform .45s ease;
     }
 
-    .gallery-card:hover img{
+    .studio-card:hover img{
       transform:scale(1.04);
     }
 
-    .gallery-tall{
+    .studio-tall{
       grid-row:span 2;
-      min-height:598px;
+      min-height:580px;
+    }
+
+    .studio-label{
+      position:absolute;
+      left:16px;
+      bottom:16px;
+      background:rgba(255,255,255,0.92);
+      color:#2f4325;
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:0.88rem;
+      box-shadow:var(--shadow-soft);
     }
 
     .gift-grid{
       display:grid;
-      grid-template-columns:0.92fr 1.08fr;
+      grid-template-columns:0.95fr 1.05fr;
       gap:28px;
       align-items:center;
     }
@@ -606,7 +576,7 @@
     }
 
     .gift-copy{
-      padding:34px;
+      padding:36px;
     }
 
     .gift-copy h3{
@@ -623,8 +593,8 @@
 
     .contact-grid{
       display:grid;
-      grid-template-columns:0.96fr 1.04fr;
-      gap:26px;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
       align-items:stretch;
     }
 
@@ -634,9 +604,9 @@
 
     .contact-card h3{
       font-family:'Playfair Display',serif;
-      font-size:1.8rem;
-      margin-bottom:18px;
+      font-size:1.85rem;
       color:var(--green-dark);
+      margin-bottom:18px;
     }
 
     .contact-list{
@@ -646,15 +616,15 @@
     }
 
     .contact-item{
-      padding:15px 16px;
-      border-radius:16px;
       background:#fff;
       border:1px solid var(--line);
+      border-radius:16px;
+      padding:15px 16px;
     }
 
     .contact-item strong{
       display:block;
-      color:#314227;
+      color:#304124;
       margin-bottom:4px;
     }
 
@@ -664,44 +634,34 @@
       font-weight:600;
     }
 
-    .contact-actions{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:10px;
-    }
-
-    .owner-card{
+    .banner-box{
       overflow:hidden;
-      min-height:100%;
       display:flex;
-      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:rgba(255,255,255,0.95);
     }
 
-    .owner-card img{
+    .banner-box img{
       width:100%;
-      height:100%;
-      object-fit:cover;
-      min-height:100%;
+      max-width:520px;
+      object-fit:contain;
     }
 
     .footer{
-      background:#17300e;
+      margin-top:30px;
+      background:#17300f;
       color:rgba(255,255,255,0.84);
-      margin-top:40px;
       padding:34px 0;
     }
 
     .footer-inner{
       display:flex;
       justify-content:space-between;
-      gap:20px;
+      gap:18px;
       flex-wrap:wrap;
       align-items:center;
-    }
-
-    .footer p{
-      margin:0;
     }
 
     .sticky-mobile{
@@ -709,7 +669,7 @@
       left:12px;
       right:12px;
       bottom:12px;
-      z-index:1100;
+      z-index:1200;
       display:none;
       gap:10px;
     }
@@ -727,20 +687,20 @@
         grid-template-columns:1fr;
       }
 
-      .gallery-grid{
+      .studio-grid{
         grid-template-columns:1fr 1fr;
       }
 
-      .gallery-tall{
+      .studio-tall{
         grid-row:auto;
-        min-height:340px;
+        min-height:360px;
       }
 
-      .hero-main-card img{
-        height:520px;
+      .hero-image img{
+        height:560px;
       }
 
-      .hero-floating{
+      .hero-card{
         position:static;
         width:100%;
         margin-top:16px;
@@ -749,6 +709,7 @@
 
     @media (max-width: 920px){
       .header-inner{
+        min-height:auto;
         padding:16px 0;
         align-items:flex-start;
         flex-direction:column;
@@ -758,19 +719,14 @@
         gap:16px;
       }
 
-      .nav-cta{
+      .header-actions{
         width:100%;
-        flex-wrap:wrap;
       }
 
-      .hero-points,
-      .about-list,
-      .note-boxes,
-      .services-grid{
-        grid-template-columns:1fr;
-      }
-
-      .gallery-grid{
+      .hero-facts,
+      .about-points,
+      .services-grid,
+      .studio-grid{
         grid-template-columns:1fr;
       }
 
@@ -780,68 +736,49 @@
     }
 
     @media (max-width: 640px){
-      body{
-        background:
-          linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
-          url("images/patternkiaw.webp") center top / cover fixed no-repeat;
-      }
-
       .container{
         width:min(100% - 20px, var(--container));
-      }
-
-      .topbar{
-        font-size:13px;
       }
 
       .header{
         position:relative;
       }
 
-      .brand img{
-        width:62px;
-        height:62px;
+      .brand{
+        align-items:flex-start;
       }
 
-      .brand-title{
-        font-size:1.02rem;
-      }
-
-      .brand-sub{
-        font-size:0.84rem;
+      .brand-logo{
+        width:160px;
+        max-width:52vw;
       }
 
       .hero{
         padding-top:34px;
       }
 
-      .hero-copy{
-        padding:26px 20px;
-        border-radius:24px;
+      .hero-copy,
+      .about-copy,
+      .service-card,
+      .gift-copy,
+      .contact-card{
+        padding:24px 20px;
       }
 
       .hero h1{
-        font-size:2.35rem;
+        font-size:2.25rem;
       }
 
-      .hero-main-card{
+      .hero-image{
         border-radius:24px;
-        min-height:auto;
       }
 
-      .hero-main-card img{
+      .hero-image img{
         height:420px;
       }
 
       .section{
-        padding:64px 0;
-      }
-
-      .service-card,
-      .about-copy,
-      .gift-copy,
-      .contact-card{
-        padding:22px;
+        padding:66px 0;
       }
 
       .sticky-mobile{
@@ -849,7 +786,7 @@
       }
 
       .footer{
-        padding-bottom:92px;
+        padding-bottom:94px;
       }
     }
   </style>
@@ -858,21 +795,15 @@
 
   <div class="topbar">
     <div class="container topbar-inner">
-      <div class="topbar-left">
-        <span>Traditionelle Thai Massage in Frechen</span>
-        <span>Ruhige Atmosphäre & stilvolles Ambiente</span>
-      </div>
-      <div class="topbar-right">
-        <span>Franz-Hennes-Str. 41 · 50226 Frechen</span>
-        <span>Tel. 02234 9331475</span>
-      </div>
+      <span>Traditionelle Thai Massage in Frechen</span>
+      <span>Franz-Hennes-Str. 41 · 50226 Frechen · Tel. 02234 9331475</span>
     </div>
   </div>
 
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <img src="images/logokiaw.png" alt="Kiaw Thaimassage & Wellness Logo" />
+        <img class="brand-logo" src="images/kiawbanner.png" alt="Kiaw Thaimassage & Wellness Logo" />
         <div class="brand-text">
           <div class="brand-title">Kiaw Thaimassage & Wellness</div>
           <div class="brand-sub">Entspannung · Regeneration · Wohlbefinden</div>
@@ -888,8 +819,8 @@
         <a href="#kontakt">Kontakt</a>
       </nav>
 
-      <div class="nav-cta">
-        <a class="btn btn-secondary" href="tel:022349331475">Jetzt anrufen</a>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
         <a class="btn btn-primary" href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </div>
@@ -900,44 +831,44 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Relax & Rejuvenate</span>
-          <h1>Traditionelle Thai Massage mit stilvoller Wellness-Atmosphäre</h1>
+          <h1>Traditionelle Thai Massage in stilvoller und ruhiger Atmosphäre</h1>
           <p>
-            Willkommen bei Kiaw Thaimassage & Wellness in Frechen. Genießen Sie
-            wohltuende Behandlungen in einem gepflegten, ruhigen Ambiente – von
-            klassischer Thaimassage über Aromaöl bis hin zu Hot Stone und
-            Kräuterstempel.
+            Kiaw Thaimassage & Wellness in Frechen steht für authentische Anwendungen,
+            ein gepflegtes Ambiente und eine hochwertige Präsentation. Die Website ist
+            bewusst so aufgebaut, dass Besucher sofort Vertrauen fassen und direkt per
+            WhatsApp oder Telefon Kontakt aufnehmen können.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">Termin per WhatsApp</a>
-            <a class="btn btn-secondary" href="tel:022349331475">Telefonisch anfragen</a>
+            <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20bei%20Kiaw%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">Termin per WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:022349331475">Jetzt anrufen</a>
           </div>
 
-          <div class="hero-points">
-            <div class="hero-point">
-              <strong>Authentische Anwendungen</strong>
-              <span>Traditionelle Techniken für Entspannung und Regeneration.</span>
+          <div class="hero-facts">
+            <div class="hero-fact">
+              <strong>Authentisch</strong>
+              <span>Traditionelle Anwendungen mit ruhiger Wellness-Ausrichtung.</span>
             </div>
-            <div class="hero-point">
-              <strong>Stilvolles Studio</strong>
-              <span>Hochwertige Räume mit ruhiger und gepflegter Atmosphäre.</span>
+            <div class="hero-fact">
+              <strong>Stilvoll</strong>
+              <span>Harmonische Räume und hochwertige visuelle Präsentation.</span>
             </div>
-            <div class="hero-point">
-              <strong>Direkte Reservierung</strong>
-              <span>Termin schnell per WhatsApp oder telefonisch anfragen.</span>
+            <div class="hero-fact">
+              <strong>Direkt buchbar</strong>
+              <span>Kontakt ohne Umwege per WhatsApp oder Telefon.</span>
             </div>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="hero-main-card">
-            <img src="images/IMG_8957.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
+          <div class="hero-image">
+            <img src="images/raum1.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
           </div>
-          <div class="hero-floating">
-            <div class="hero-floating-title">Wellness mit persönlicher Note</div>
+          <div class="hero-card">
+            <h3>Behandlungsraum mit Premium-Wirkung</h3>
             <p>
-              Ruhige Räume, sorgfältig vorbereitete Anwendungen und ein
-              hochwertiges Ambiente schaffen eine entspannte Auszeit vom Alltag.
+              Der Hauptbereich zeigt direkt den hochwertigen Behandlungsraum, damit
+              Besucher sofort sehen, wie gepflegt und professionell das Studio wirkt.
             </p>
           </div>
         </div>
@@ -947,13 +878,12 @@
     <section class="section" id="ueber-uns">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Über Kiaw</span>
-          <h2>Ein Ort für echte Entspannung, Achtsamkeit und Wohlbefinden</h2>
+          <span class="kicker">Über uns</span>
+          <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
           <p>
             Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
-            einem gepflegten, modernen Studio-Konzept. Der Fokus liegt auf Ruhe,
-            Qualität und einem angenehmen Gesamterlebnis vom ersten Kontakt bis
-            zur Behandlung.
+            einem modernen, einladenden Studio. Die persönliche Atmosphäre und das
+            sorgfältig eingerichtete Umfeld schaffen Vertrauen vom ersten Eindruck an.
           </p>
         </div>
 
@@ -963,24 +893,24 @@
           </div>
 
           <div class="card about-copy">
-            <h3>Persönlich, professionell und atmosphärisch stark</h3>
+            <h3>Wellness mit persönlicher Note</h3>
             <p>
-              Das Studio präsentiert sich bewusst hochwertig: warme Materialien,
-              gepflegte Behandlungsräume, harmonische Farben und klassische
-              Thai-Elemente sorgen für einen professionellen und zugleich
-              einladenden Auftritt.
+              Die Inhaberin und das gesamte Erscheinungsbild des Studios vermitteln
+              Ruhe, Freundlichkeit und Professionalität. Genau deshalb ist dieses Bild
+              hier bewusst prominent platziert: Es stärkt Vertrauen und gibt der Website
+              ein persönliches Gesicht.
             </p>
             <p>
-              Ob zur Regeneration nach belastenden Tagen, zum Abschalten oder als
-              Geschenkidee – Kiaw Thaimassage & Wellness bietet einen Rahmen, der
-              Vertrauen schafft und zur Wiederkehr einlädt.
+              Von klassischer Thai-Massage über Aromaöl bis hin zu Hot Stone und
+              Kräuterstempel entsteht ein Angebot, das sowohl entspannend als auch
+              hochwertig positioniert ist.
             </p>
 
-            <div class="about-list">
-              <div class="about-item">Traditionelle Thai-Massage</div>
-              <div class="about-item">Aromaöl & Wellness</div>
-              <div class="about-item">Hot Stone Anwendungen</div>
-              <div class="about-item">Kräuterstempel-Massage</div>
+            <div class="about-points">
+              <div class="about-point">Traditionelle Thai-Massage</div>
+              <div class="about-point">Aromaöl & Wellness</div>
+              <div class="about-point">Hot Stone Anwendungen</div>
+              <div class="about-point">Kräuterstempel-Massage</div>
             </div>
           </div>
         </div>
@@ -991,11 +921,11 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Leistungen</span>
-          <h2>Behandlungen mit klarer Struktur und hochwertiger Präsentation</h2>
+          <h2>Strukturiert dargestellt und direkt anfragbar</h2>
           <p>
-            Die Leistungsdarstellung ist so aufgebaut, dass Besucher schnell
-            verstehen, was angeboten wird – mit direkten Kontaktmöglichkeiten für
-            die Terminvereinbarung.
+            Alle Leistungen sind klar gegliedert und mit direkter WhatsApp- oder
+            Telefonweiterleitung verknüpft, damit Interessenten ohne Reibung Kontakt
+            aufnehmen können.
           </p>
         </div>
 
@@ -1006,9 +936,7 @@
               <span class="badge">Klassiker</span>
             </div>
             <p>
-              Traditionelle Behandlung mit entspannendem und aktivierendem
-              Charakter – ideal für alle, die klassische Thai-Massage in einem
-              stilvollen Studio erleben möchten.
+              Klassische Thai-Massage mit entspannender und aktivierender Wirkung.
             </p>
             <div class="service-prices">
               <div><span>30 Minuten</span><span>29 €</span></div>
@@ -1017,8 +945,8 @@
               <div><span>120 Minuten</span><span>85 €</span></div>
             </div>
             <div class="service-actions">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">Per WhatsApp anfragen</a>
-              <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:022349331475">Telefon</a>
             </div>
           </article>
 
@@ -1028,8 +956,7 @@
               <span class="badge">Wellness</span>
             </div>
             <p>
-              Sanfte Behandlung mit wohltuendem Öl für ein ruhiges, fließendes
-              Massageerlebnis und eine entspannte Atmosphäre.
+              Sanfte Anwendung mit Öl für eine ruhige, fließende Entspannung.
             </p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>53 €</span></div>
@@ -1037,8 +964,8 @@
               <div><span>120 Minuten</span><span>93 €</span></div>
             </div>
             <div class="service-actions">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Wellness-Aroma%C3%B6l-Massage%20anfragen." target="_blank" rel="noopener noreferrer">Per WhatsApp anfragen</a>
-              <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Wellness-Aroma%C3%B6l-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:022349331475">Telefon</a>
             </div>
           </article>
 
@@ -1048,8 +975,7 @@
               <span class="badge">Premium</span>
             </div>
             <p>
-              Wärmende Anwendung mit Kräuterstempeln – atmosphärisch stark,
-              hochwertig inszeniert und ideal für den Premium-Bereich der Website.
+              Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.
             </p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
@@ -1057,8 +983,8 @@
               <div><span>120 Minuten</span><span>109 €</span></div>
             </div>
             <div class="service-actions">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Kr%C3%A4uterstempel-Massage%20anfragen." target="_blank" rel="noopener noreferrer">Per WhatsApp anfragen</a>
-              <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Kr%C3%A4uterstempel-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:022349331475">Telefon</a>
             </div>
           </article>
 
@@ -1068,8 +994,7 @@
               <span class="badge">Beliebt</span>
             </div>
             <p>
-              Entspannende Wärmebehandlung für ein luxuriöses Wellness-Gefühl –
-              visuell und inhaltlich ideal als hochwertiges Zusatzangebot.
+              Tiefenentspannung durch Wärme und ruhige, hochwertige Anwendung.
             </p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
@@ -1077,8 +1002,8 @@
               <div><span>120 Minuten</span><span>109 €</span></div>
             </div>
             <div class="service-actions">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Hotstone-Massage%20anfragen." target="_blank" rel="noopener noreferrer">Per WhatsApp anfragen</a>
-              <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Hotstone-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:022349331475">Telefon</a>
             </div>
           </article>
         </div>
@@ -1088,12 +1013,11 @@
     <section class="section" id="preise">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Preisübersicht</span>
-          <h2>Alle Behandlungen übersichtlich in Tabellenform</h2>
+          <span class="kicker">Preise</span>
+          <h2>Preisübersicht als geschriebene Tabelle</h2>
           <p>
-            Die Preise sind hier bewusst nicht als Bild, sondern als saubere,
-            lesbare Tabelle eingebunden – deutlich professioneller, besser für
-            Nutzer und suchmaschinenfreundlicher.
+            Die Preisliste ist bewusst als echte HTML-Tabelle angelegt und nicht als Foto,
+            damit sie klarer, hochwertiger und benutzerfreundlicher wirkt.
           </p>
         </div>
 
@@ -1104,7 +1028,7 @@
                 <th>Behandlungsform</th>
                 <th>Dauer</th>
                 <th>Preis</th>
-                <th>Direkt anfragen</th>
+                <th>Direkter Kontakt</th>
               </tr>
             </thead>
             <tbody>
@@ -1112,7 +1036,7 @@
                 <td>Thaimassage / mit oder ohne Massageöl</td>
                 <td>30 Minuten</td>
                 <td>29 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%2030%20Minuten%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Thaimassage / mit oder ohne Massageöl</td>
@@ -1124,7 +1048,7 @@
                 <td>Thaimassage / mit oder ohne Massageöl</td>
                 <td>90 Minuten</td>
                 <td>65 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%2090%20Minuten%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Thaimassage / mit oder ohne Massageöl</td>
@@ -1136,7 +1060,7 @@
                 <td>Wellness-Aromaöl-Massage</td>
                 <td>60 Minuten</td>
                 <td>53 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%2060%20Minuten%20Wellness-Aroma%C3%B6l-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Wellness-Aromaöl-Massage</td>
@@ -1148,7 +1072,7 @@
                 <td>Wellness-Aromaöl-Massage</td>
                 <td>120 Minuten</td>
                 <td>93 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20120%20Minuten%20Wellness-Aroma%C3%B6l-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Entspannende Kräuterstempel-Massage</td>
@@ -1160,7 +1084,7 @@
                 <td>Entspannende Kräuterstempel-Massage</td>
                 <td>90 Minuten</td>
                 <td>85 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%2090%20Minuten%20Kr%C3%A4uterstempel-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Entspannende Kräuterstempel-Massage</td>
@@ -1172,7 +1096,7 @@
                 <td>Wärmende Hotstone-Massage</td>
                 <td>60 Minuten</td>
                 <td>59 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%2060%20Minuten%20Hotstone-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
               <tr>
                 <td>Wärmende Hotstone-Massage</td>
@@ -1184,25 +1108,10 @@
                 <td>Wärmende Hotstone-Massage</td>
                 <td>120 Minuten</td>
                 <td>109 €</td>
-                <td><a href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20120%20Minuten%20Hotstone-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
+                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div class="note-boxes">
-          <div class="note-box">
-            <h4>Direkte Anfrage</h4>
-            <p>Jede Leistung ist direkt mit WhatsApp oder Telefon verknüpft, damit Anfragen ohne Umwege erfolgen.</p>
-          </div>
-          <div class="note-box">
-            <h4>Professionelle Lesbarkeit</h4>
-            <p>Die Preise sind als echte HTML-Tabelle eingebunden und dadurch deutlich hochwertiger als ein Foto.</p>
-          </div>
-          <div class="note-box">
-            <h4>Verkaufsstarker Aufbau</h4>
-            <p>Die Kombination aus Leistungsboxen, Tabelle und Kontakt-CTAs erhöht die Chance auf direkte Terminbuchungen.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -1210,29 +1119,37 @@
     <section class="section" id="studio">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Studio</span>
-          <h2>Einblicke in Räume, Atmosphäre und hochwertige Details</h2>
+          <span class="kicker">Studioeinblicke</span>
+          <h2>Die Bilder jetzt sinnvoll und sauber geordnet</h2>
           <p>
-            Die Bildsprache ist hier bewusst großzügig angelegt, damit das Studio
-            sofort Qualität, Ruhe und Vertrauen ausstrahlt.
+            Die Studiosektion zeigt zuerst die beiden Behandlungsräume und danach
+            ergänzende Eindrücke aus dem Studio, damit die Seite visuell stimmig wirkt.
           </p>
         </div>
 
-        <div class="gallery-grid">
-          <div class="card gallery-card gallery-tall">
-            <img src="images/IMG_8957.jpg" alt="Behandlungsraum von Kiaw Thaimassage mit dekorativem Bett" />
+        <div class="studio-grid">
+          <div class="card studio-card studio-tall">
+            <img src="images/raum1.jpg" alt="Großer Behandlungsraum von Kiaw Thaimassage" />
+            <div class="studio-label">Behandlungsraum 1</div>
           </div>
-          <div class="card gallery-card">
-            <img src="images/IMG_8958.jpg" alt="Zweiter Behandlungsraum von Kiaw Thaimassage" />
+
+          <div class="card studio-card">
+            <img src="images/raum2.jpg" alt="Zweiter Behandlungsraum von Kiaw Thaimassage" />
+            <div class="studio-label">Behandlungsraum 2</div>
           </div>
-          <div class="card gallery-card">
-            <img src="images/IMG_8955.jpg" alt="Kräuterstempel und Wellness-Details" />
+
+          <div class="card studio-card">
+            <img src="images/kraeuterstempel.jpg" alt="Kräuterstempel bei Kiaw Thaimassage" />
+            <div class="studio-label">Kräuterstempel</div>
           </div>
-          <div class="card gallery-card">
-            <img src="images/IMG_8954.jpg" alt="Gutscheine und Wellness-Arrangement" />
+
+          <div class="card studio-card">
+            <img src="images/gutschein.jpg" alt="Gutscheine von Kiaw Thaimassage" />
+            <div class="studio-label">Gutscheine</div>
           </div>
-          <div class="card gallery-card">
-            <img src="images/kiawbanner.png" alt="Kiaw Banner Motiv" />
+
+          <div class="card studio-card banner-box">
+            <img src="images/kiawbanner.png" alt="Kiaw Thaimassage Banner" />
           </div>
         </div>
       </div>
@@ -1242,24 +1159,24 @@
       <div class="container">
         <div class="gift-grid">
           <div class="card gift-image">
-            <img src="images/IMG_8954.jpg" alt="Gutscheine von Kiaw Thaimassage & Wellness" />
+            <img src="images/gutschein.jpg" alt="Gutscheine von Kiaw Thaimassage & Wellness" />
           </div>
 
           <div class="card gift-copy">
-            <span class="kicker">Gutscheine</span>
-            <h3>Wohlbefinden stilvoll verschenken</h3>
+            <span class="eyebrow">Gutscheine</span>
+            <h3>Entspannung stilvoll verschenken</h3>
             <p>
-              Gutscheine sind eine hochwertige und zugleich unkomplizierte
-              Geschenkidee – ob für Geburtstage, Feiertage oder einfach als
-              besondere Aufmerksamkeit.
+              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage,
+              Feiertage oder besondere Anlässe. Durch die professionelle Darstellung
+              auf der Website werden sie nicht wie ein Nebenthema behandelt, sondern
+              als echter Verkaufsbereich.
             </p>
             <p>
-              Durch die ruhige Bildsprache und das bestehende Material lassen sich
-              Gutscheine auf der Website sehr verkaufsstark präsentieren.
+              Interessenten können direkt per WhatsApp oder telefonisch anfragen.
             </p>
 
             <div class="hero-actions" style="margin-top:20px;">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Gutschein%20bei%20Kiaw%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">Gutschein per WhatsApp</a>
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Gutschein%20anfragen." target="_blank" rel="noopener noreferrer">Gutschein per WhatsApp</a>
               <a class="btn btn-secondary" href="tel:022349331475">Telefonisch anfragen</a>
             </div>
           </div>
@@ -1273,9 +1190,8 @@
           <span class="kicker">Kontakt</span>
           <h2>Direkt anfragen und Termin sichern</h2>
           <p>
-            Für Terminwünsche und Rückfragen ist der Kontakt bewusst einfach
-            gehalten: per WhatsApp oder telefonisch – schnell, direkt und ohne
-            unnötige Formularhürden.
+            Keine unnötigen Formulare: Wer buchen möchte, wird direkt zu WhatsApp
+            oder zur Telefonnummer weitergeleitet.
           </p>
         </div>
 
@@ -1288,31 +1204,28 @@
                 <strong>Adresse</strong>
                 <span>Franz-Hennes-Str. 41, 50226 Frechen</span>
               </div>
-
               <div class="contact-item">
                 <strong>Telefon</strong>
                 <a href="tel:022349331475">02234 9331475</a>
               </div>
-
+              <div class="contact-item">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">Jetzt direkt öffnen</a>
+              </div>
               <div class="contact-item">
                 <strong>E-Mail</strong>
                 <a href="mailto:prayoon.hanjohr@gmail.com">prayoon.hanjohr@gmail.com</a>
               </div>
-
-              <div class="contact-item">
-                <strong>WhatsApp</strong>
-                <a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">Direkt öffnen</a>
-              </div>
             </div>
 
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20bei%20Kiaw%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">Jetzt per WhatsApp</a>
-              <a class="btn btn-secondary" href="tel:022349331475">Jetzt anrufen</a>
+            <div class="header-actions">
+              <a class="btn btn-primary" href="https://wa.me/4922349331475?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:022349331475">Anrufen</a>
             </div>
           </div>
 
-          <div class="card owner-card">
-            <img src="images/Kiaw inhaberin.png" alt="Inhaberin von Kiaw Thaimassage & Wellness im Studio" />
+          <div class="card about-image">
+            <img src="images/Kiaw inhaberin.png" alt="Inhaberin von Kiaw Thaimassage" />
           </div>
         </div>
       </div>
