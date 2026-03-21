@@ -95,7 +95,7 @@
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(255,255,255,0.92);
+      background:rgba(255,255,255,0.94);
       backdrop-filter:blur(14px);
       border-bottom:1px solid rgba(69,104,37,0.08);
     }
@@ -116,9 +116,10 @@
     }
 
     .brand-logo{
-      width:190px;
-      max-width:38vw;
+      width:92px;
+      height:92px;
       object-fit:contain;
+      flex-shrink:0;
     }
 
     .brand-text{
@@ -218,7 +219,7 @@
     }
 
     .hero-copy{
-      background:rgba(255,255,255,0.78);
+      background:rgba(255,255,255,0.80);
       border:1px solid rgba(69,104,37,0.08);
       backdrop-filter:blur(10px);
       border-radius:34px;
@@ -634,19 +635,17 @@
       font-weight:600;
     }
 
-    .banner-box{
+    .map-card{
       overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-      background:rgba(255,255,255,0.95);
+      min-height:100%;
     }
 
-    .banner-box img{
+    .map-card iframe{
       width:100%;
-      max-width:520px;
-      object-fit:contain;
+      height:100%;
+      min-height:620px;
+      border:0;
+      display:block;
     }
 
     .footer{
@@ -705,6 +704,10 @@
         width:100%;
         margin-top:16px;
       }
+
+      .map-card iframe{
+        min-height:420px;
+      }
     }
 
     @media (max-width: 920px){
@@ -744,13 +747,9 @@
         position:relative;
       }
 
-      .brand{
-        align-items:flex-start;
-      }
-
       .brand-logo{
-        width:160px;
-        max-width:52vw;
+        width:74px;
+        height:74px;
       }
 
       .hero{
@@ -781,6 +780,10 @@
         padding:66px 0;
       }
 
+      .map-card iframe{
+        min-height:340px;
+      }
+
       .sticky-mobile{
         display:flex;
       }
@@ -803,7 +806,7 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <img class="brand-logo" src="images/kiawbanner.png" alt="Kiaw Thaimassage & Wellness Logo" />
+        <img class="brand-logo" src="images/logokiaw.png" alt="Kiaw Thaimassage & Wellness Logo" />
         <div class="brand-text">
           <div class="brand-title">Kiaw Thaimassage & Wellness</div>
           <div class="brand-sub">Entspannung · Regeneration · Wohlbefinden</div>
@@ -834,9 +837,9 @@
           <h1>Traditionelle Thai Massage in stilvoller und ruhiger Atmosphäre</h1>
           <p>
             Kiaw Thaimassage & Wellness in Frechen steht für authentische Anwendungen,
-            ein gepflegtes Ambiente und eine hochwertige Präsentation. Die Website ist
-            bewusst so aufgebaut, dass Besucher sofort Vertrauen fassen und direkt per
-            WhatsApp oder Telefon Kontakt aufnehmen können.
+            eine ruhige Studioatmosphäre und einen hochwertigen Auftritt. Die Seite ist
+            darauf ausgelegt, Vertrauen aufzubauen und direkte Anfragen per WhatsApp
+            oder Telefon zu fördern.
           </p>
 
           <div class="hero-actions">
@@ -847,11 +850,11 @@
           <div class="hero-facts">
             <div class="hero-fact">
               <strong>Authentisch</strong>
-              <span>Traditionelle Anwendungen mit ruhiger Wellness-Ausrichtung.</span>
+              <span>Traditionelle Anwendungen mit Wellness-Fokus.</span>
             </div>
             <div class="hero-fact">
               <strong>Stilvoll</strong>
-              <span>Harmonische Räume und hochwertige visuelle Präsentation.</span>
+              <span>Gepflegte Räume und hochwertige Präsentation.</span>
             </div>
             <div class="hero-fact">
               <strong>Direkt buchbar</strong>
@@ -865,10 +868,10 @@
             <img src="images/raum1.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
           </div>
           <div class="hero-card">
-            <h3>Behandlungsraum mit Premium-Wirkung</h3>
+            <h3>Hochwertiger erster Eindruck</h3>
             <p>
-              Der Hauptbereich zeigt direkt den hochwertigen Behandlungsraum, damit
-              Besucher sofort sehen, wie gepflegt und professionell das Studio wirkt.
+              Der Hauptbereich zeigt direkt den Behandlungsraum, damit Besucher auf
+              den ersten Blick sehen, wie gepflegt und professionell das Studio wirkt.
             </p>
           </div>
         </div>
@@ -882,8 +885,8 @@
           <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
           <p>
             Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
-            einem modernen, einladenden Studio. Die persönliche Atmosphäre und das
-            sorgfältig eingerichtete Umfeld schaffen Vertrauen vom ersten Eindruck an.
+            einem modernen, harmonischen Studio. Die persönliche Note und das
+            hochwertige Ambiente schaffen Vertrauen vom ersten Eindruck an.
           </p>
         </div>
 
@@ -895,15 +898,14 @@
           <div class="card about-copy">
             <h3>Wellness mit persönlicher Note</h3>
             <p>
-              Die Inhaberin und das gesamte Erscheinungsbild des Studios vermitteln
-              Ruhe, Freundlichkeit und Professionalität. Genau deshalb ist dieses Bild
-              hier bewusst prominent platziert: Es stärkt Vertrauen und gibt der Website
-              ein persönliches Gesicht.
+              Die Inhaberin gibt dem Studio ein authentisches Gesicht. Genau deshalb
+              ist dieses Bild im Bereich „Über uns“ richtig platziert: Es schafft Nähe,
+              Glaubwürdigkeit und eine persönliche Markenwirkung.
             </p>
             <p>
-              Von klassischer Thai-Massage über Aromaöl bis hin zu Hot Stone und
-              Kräuterstempel entsteht ein Angebot, das sowohl entspannend als auch
-              hochwertig positioniert ist.
+              Von klassischer Thai-Massage über Aromaöl bis zu Hot Stone und
+              Kräuterstempeln entsteht ein Angebot, das Entspannung und Qualität
+              überzeugend miteinander verbindet.
             </p>
 
             <div class="about-points">
@@ -923,9 +925,8 @@
           <span class="kicker">Leistungen</span>
           <h2>Strukturiert dargestellt und direkt anfragbar</h2>
           <p>
-            Alle Leistungen sind klar gegliedert und mit direkter WhatsApp- oder
-            Telefonweiterleitung verknüpft, damit Interessenten ohne Reibung Kontakt
-            aufnehmen können.
+            Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
+            verknüpft, damit Besucher sofort handeln können.
           </p>
         </div>
 
@@ -935,9 +936,7 @@
               <h3>Thaimassage / mit oder ohne Massageöl</h3>
               <span class="badge">Klassiker</span>
             </div>
-            <p>
-              Klassische Thai-Massage mit entspannender und aktivierender Wirkung.
-            </p>
+            <p>Klassische Thai-Massage mit entspannender und aktivierender Wirkung.</p>
             <div class="service-prices">
               <div><span>30 Minuten</span><span>29 €</span></div>
               <div><span>60 Minuten</span><span>45 €</span></div>
@@ -955,9 +954,7 @@
               <h3>Wellness-Aromaöl-Massage</h3>
               <span class="badge">Wellness</span>
             </div>
-            <p>
-              Sanfte Anwendung mit Öl für eine ruhige, fließende Entspannung.
-            </p>
+            <p>Sanfte Anwendung mit Öl für ein ruhiges, fließendes Entspannungserlebnis.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>53 €</span></div>
               <div><span>90 Minuten</span><span>73 €</span></div>
@@ -974,9 +971,7 @@
               <h3>Entspannende Kräuterstempel-Massage</h3>
               <span class="badge">Premium</span>
             </div>
-            <p>
-              Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.
-            </p>
+            <p>Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -993,9 +988,7 @@
               <h3>Wärmende Hotstone-Massage</h3>
               <span class="badge">Beliebt</span>
             </div>
-            <p>
-              Tiefenentspannung durch Wärme und ruhige, hochwertige Anwendung.
-            </p>
+            <p>Tiefenentspannung durch Wärme und eine ruhige, hochwertige Anwendung.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -1016,8 +1009,8 @@
           <span class="kicker">Preise</span>
           <h2>Preisübersicht als geschriebene Tabelle</h2>
           <p>
-            Die Preisliste ist bewusst als echte HTML-Tabelle angelegt und nicht als Foto,
-            damit sie klarer, hochwertiger und benutzerfreundlicher wirkt.
+            Die Preisliste ist bewusst als echte HTML-Tabelle aufgebaut und nicht als Bild,
+            damit sie professionell, lesbar und benutzerfreundlich wirkt.
           </p>
         </div>
 
@@ -1032,84 +1025,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Thaimassage / mit oder ohne Massageöl</td>
-                <td>30 Minuten</td>
-                <td>29 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Thaimassage / mit oder ohne Massageöl</td>
-                <td>60 Minuten</td>
-                <td>45 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Thaimassage / mit oder ohne Massageöl</td>
-                <td>90 Minuten</td>
-                <td>65 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Thaimassage / mit oder ohne Massageöl</td>
-                <td>120 Minuten</td>
-                <td>85 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Wellness-Aromaöl-Massage</td>
-                <td>60 Minuten</td>
-                <td>53 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Wellness-Aromaöl-Massage</td>
-                <td>90 Minuten</td>
-                <td>73 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Wellness-Aromaöl-Massage</td>
-                <td>120 Minuten</td>
-                <td>93 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Entspannende Kräuterstempel-Massage</td>
-                <td>60 Minuten</td>
-                <td>59 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Entspannende Kräuterstempel-Massage</td>
-                <td>90 Minuten</td>
-                <td>85 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Entspannende Kräuterstempel-Massage</td>
-                <td>120 Minuten</td>
-                <td>109 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Wärmende Hotstone-Massage</td>
-                <td>60 Minuten</td>
-                <td>59 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
-              <tr>
-                <td>Wärmende Hotstone-Massage</td>
-                <td>90 Minuten</td>
-                <td>85 €</td>
-                <td><a href="tel:022349331475">Telefon</a></td>
-              </tr>
-              <tr>
-                <td>Wärmende Hotstone-Massage</td>
-                <td>120 Minuten</td>
-                <td>109 €</td>
-                <td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td>
-              </tr>
+              <tr><td>Thaimassage / mit oder ohne Massageöl</td><td>30 Minuten</td><td>29 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Thaimassage / mit oder ohne Massageöl</td><td>60 Minuten</td><td>45 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Thaimassage / mit oder ohne Massageöl</td><td>90 Minuten</td><td>65 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Thaimassage / mit oder ohne Massageöl</td><td>120 Minuten</td><td>85 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Wellness-Aromaöl-Massage</td><td>60 Minuten</td><td>53 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Wellness-Aromaöl-Massage</td><td>90 Minuten</td><td>73 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Wellness-Aromaöl-Massage</td><td>120 Minuten</td><td>93 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Entspannende Kräuterstempel-Massage</td><td>60 Minuten</td><td>59 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Entspannende Kräuterstempel-Massage</td><td>90 Minuten</td><td>85 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Entspannende Kräuterstempel-Massage</td><td>120 Minuten</td><td>109 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Wärmende Hotstone-Massage</td><td>60 Minuten</td><td>59 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
+              <tr><td>Wärmende Hotstone-Massage</td><td>90 Minuten</td><td>85 €</td><td><a href="tel:022349331475">Telefon</a></td></tr>
+              <tr><td>Wärmende Hotstone-Massage</td><td>120 Minuten</td><td>109 €</td><td><a href="https://wa.me/4922349331475" target="_blank" rel="noopener noreferrer">WhatsApp</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -1119,11 +1047,11 @@
     <section class="section" id="studio">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Studioeinblicke</span>
-          <h2>Die Bilder jetzt sinnvoll und sauber geordnet</h2>
+          <span class="kicker">Studio</span>
+          <h2>Sauber geordnete Studioeinblicke</h2>
           <p>
-            Die Studiosektion zeigt zuerst die beiden Behandlungsräume und danach
-            ergänzende Eindrücke aus dem Studio, damit die Seite visuell stimmig wirkt.
+            Zuerst die Behandlungsräume, danach ergänzende Eindrücke wie Kräuterstempel
+            und Gutscheine – dadurch wirkt die Galerie hochwertig und logisch aufgebaut.
           </p>
         </div>
 
@@ -1148,8 +1076,9 @@
             <div class="studio-label">Gutscheine</div>
           </div>
 
-          <div class="card studio-card banner-box">
-            <img src="images/kiawbanner.png" alt="Kiaw Thaimassage Banner" />
+          <div class="card studio-card">
+            <img src="images/Kiaw inhaberin.png" alt="Inhaberin von Kiaw Thaimassage & Wellness" />
+            <div class="studio-label">Persönlicher Eindruck</div>
           </div>
         </div>
       </div>
@@ -1166,13 +1095,12 @@
             <span class="eyebrow">Gutscheine</span>
             <h3>Entspannung stilvoll verschenken</h3>
             <p>
-              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage,
-              Feiertage oder besondere Anlässe. Durch die professionelle Darstellung
-              auf der Website werden sie nicht wie ein Nebenthema behandelt, sondern
-              als echter Verkaufsbereich.
+              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
+              oder besondere Anlässe. Sie werden hier bewusst als eigener Bereich
+              präsentiert, damit sie sofort als attraktives Angebot wahrgenommen werden.
             </p>
             <p>
-              Interessenten können direkt per WhatsApp oder telefonisch anfragen.
+              Die Anfrage erfolgt direkt per WhatsApp oder telefonisch.
             </p>
 
             <div class="hero-actions" style="margin-top:20px;">
@@ -1188,10 +1116,10 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Kontakt</span>
-          <h2>Direkt anfragen und Termin sichern</h2>
+          <h2>Direkt anfragen und Standort ansehen</h2>
           <p>
-            Keine unnötigen Formulare: Wer buchen möchte, wird direkt zu WhatsApp
-            oder zur Telefonnummer weitergeleitet.
+            Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
+            Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
           </p>
         </div>
 
@@ -1224,8 +1152,14 @@
             </div>
           </div>
 
-          <div class="card about-image">
-            <img src="images/Kiaw inhaberin.png" alt="Inhaberin von Kiaw Thaimassage" />
+          <div class="card map-card">
+            <iframe
+              src="https://www.google.com/maps?q=Franz-Hennes-Str.%2041,%2050226%20Frechen&z=15&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Maps Standort Kiaw Thaimassage & Wellness">
+            </iframe>
           </div>
         </div>
       </div>
