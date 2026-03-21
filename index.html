@@ -54,11 +54,31 @@
       font-family:'Inter',sans-serif;
       color:var(--text);
       line-height:1.6;
-      background:
-        linear-gradient(rgba(255,255,255,0.96), rgba(255,255,255,0.96)),
-        url("images/patternkiaw.webp") repeat;
-      background-size:700px;
-      background-attachment:fixed;
+      background-color:#f8faf5;
+      position:relative;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-2;
+      background-image:url("images/patternkiaw.webp");
+      background-repeat:repeat;
+      background-position:center top;
+      background-size:900px auto;
+      opacity:0.34;
+      pointer-events:none;
+    }
+
+    body::after{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-1;
+      background:rgba(255,255,255,0.74);
+      pointer-events:none;
     }
 
     img{
@@ -97,7 +117,7 @@
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(255,255,255,0.94);
+      background:rgba(255,255,255,0.90);
       backdrop-filter:blur(14px);
       border-bottom:1px solid rgba(69,104,37,0.08);
     }
@@ -204,7 +224,7 @@
     }
 
     .btn-secondary{
-      background:#fff;
+      background:rgba(255,255,255,0.92);
       color:var(--green-dark);
       border:1px solid rgba(69,104,37,0.14);
     }
@@ -221,7 +241,7 @@
     }
 
     .hero-copy{
-      background:rgba(255,255,255,0.80);
+      background:rgba(255,255,255,0.78);
       border:1px solid rgba(69,104,37,0.08);
       backdrop-filter:blur(10px);
       border-radius:34px;
@@ -272,7 +292,7 @@
     }
 
     .hero-fact{
-      background:#fff;
+      background:rgba(255,255,255,0.88);
       border:1px solid var(--line);
       border-radius:18px;
       padding:16px;
@@ -313,7 +333,7 @@
       right:-18px;
       bottom:20px;
       width:min(290px, 72%);
-      background:rgba(255,255,255,0.96);
+      background:rgba(255,255,255,0.93);
       border:1px solid var(--line);
       border-radius:24px;
       padding:20px;
@@ -365,10 +385,11 @@
     }
 
     .card{
-      background:rgba(255,255,255,0.92);
+      background:rgba(255,255,255,0.84);
       border:1px solid var(--line);
       border-radius:var(--radius-xl);
       box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(6px);
     }
 
     .about-grid{
@@ -415,7 +436,7 @@
     }
 
     .about-point{
-      background:#fff;
+      background:rgba(255,255,255,0.90);
       border:1px solid var(--line);
       border-radius:18px;
       padding:16px;
@@ -491,8 +512,9 @@
       overflow:auto;
       border:1px solid var(--line);
       border-radius:24px;
-      background:rgba(255,255,255,0.96);
+      background:rgba(255,255,255,0.88);
       box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(6px);
     }
 
     table{
@@ -619,7 +641,7 @@
     }
 
     .contact-item{
-      background:#fff;
+      background:rgba(255,255,255,0.90);
       border:1px solid var(--line);
       border-radius:16px;
       padding:15px 16px;
@@ -793,6 +815,11 @@
       .footer{
         padding-bottom:94px;
       }
+
+      body::before{
+        background-size:560px auto;
+        opacity:0.28;
+      }
     }
   </style>
 </head>
@@ -870,10 +897,10 @@
             <img src="images/raum1.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
           </div>
           <div class="hero-card">
-            <h3>Hochwertiger erster Eindruck</h3>
+            <h3>Ruhe, Qualität und Wohlbefinden</h3>
             <p>
-              Der Hauptbereich zeigt direkt den Behandlungsraum, damit Besucher auf
-              den ersten Blick sehen, wie gepflegt und professionell das Studio wirkt.
+              Ein harmonischer erster Eindruck schafft Vertrauen und vermittelt direkt
+              die entspannte Atmosphäre des Studios.
             </p>
           </div>
         </div>
@@ -900,9 +927,8 @@
           <div class="card about-copy">
             <h3>Wellness mit persönlicher Note</h3>
             <p>
-              Die Inhaberin gibt dem Studio ein authentisches Gesicht. Genau deshalb
-              ist dieses Bild im Bereich „Über uns“ richtig platziert: Es schafft Nähe,
-              Glaubwürdigkeit und eine persönliche Markenwirkung.
+              Die Inhaberin gibt dem Studio ein authentisches Gesicht und sorgt für
+              eine persönliche, vertrauensvolle Atmosphäre.
             </p>
             <p>
               Von klassischer Thai-Massage über Aromaöl bis zu Hot Stone und
@@ -1009,10 +1035,9 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Preise</span>
-          <h2>Preisübersicht als geschriebene Tabelle</h2>
+          <h2>Preisübersicht</h2>
           <p>
-            Die Preisliste ist bewusst als echte HTML-Tabelle aufgebaut und nicht als Bild,
-            damit sie professionell, lesbar und benutzerfreundlich wirkt.
+            Die Preisliste ist klar strukturiert und auf allen Geräten gut lesbar.
           </p>
         </div>
 
@@ -1052,8 +1077,7 @@
           <span class="kicker">Studio</span>
           <h2>Sauber geordnete Studioeinblicke</h2>
           <p>
-            Zuerst die Behandlungsräume, danach ergänzende Eindrücke wie Kräuterstempel
-            und Gutscheine – dadurch wirkt die Galerie hochwertig und logisch aufgebaut.
+            Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
           </p>
         </div>
 
@@ -1098,8 +1122,7 @@
             <h3>Entspannung stilvoll verschenken</h3>
             <p>
               Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
-              oder besondere Anlässe. Sie werden hier bewusst als eigener Bereich
-              präsentiert, damit sie sofort als attraktives Angebot wahrgenommen werden.
+              oder besondere Anlässe.
             </p>
             <p>
               Die Anfrage erfolgt direkt per WhatsApp oder telefonisch.
