@@ -531,6 +531,59 @@
       margin-bottom:14px;
     }
 
+    .about-mini-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      align-self:flex-start;
+      padding:8px 14px;
+      margin-bottom:14px;
+      border-radius:999px;
+      background:var(--green-soft);
+      border:1px solid rgba(197,165,106,0.32);
+      color:var(--green-dark);
+      font-size:0.78rem;
+      font-weight:800;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+    }
+
+    .about-mini-kicker::before,
+    .about-mini-kicker::after{
+      content:"✦";
+      color:var(--gold);
+      font-size:0.8rem;
+      line-height:1;
+    }
+
+    .about-highlight{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
+      margin:10px 0 18px;
+    }
+
+    .about-highlight-item{
+      background:rgba(255,255,255,0.92);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .about-highlight-item strong{
+      display:block;
+      color:var(--green-dark);
+      font-size:1rem;
+      margin-bottom:6px;
+    }
+
+    .about-highlight-item span{
+      color:var(--muted);
+      font-size:0.94rem;
+      line-height:1.55;
+    }
+
     .about-points{
       display:grid;
       grid-template-columns:repeat(2, minmax(0,1fr));
@@ -557,6 +610,16 @@
       transform:translateY(-50%);
       color:var(--gold);
       font-size:0.95rem;
+    }
+
+    .about-note{
+      margin-top:18px;
+      padding:18px 20px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(238,245,232,0.95), rgba(255,255,255,0.92));
+      border:1px solid rgba(197,165,106,0.22);
+      color:#42503d;
+      font-weight:600;
     }
 
     .services-grid{
@@ -622,40 +685,6 @@
       display:flex;
       gap:10px;
       flex-wrap:wrap;
-    }
-
-    .table-wrap{
-      overflow:auto;
-      border:1px solid var(--line);
-      border-radius:24px;
-      background:rgba(255,255,255,0.88);
-      box-shadow:var(--shadow-soft);
-      backdrop-filter:blur(6px);
-    }
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      min-width:780px;
-    }
-
-    thead th{
-      background:linear-gradient(90deg, var(--green-dark), var(--green));
-      color:#fff;
-      text-align:left;
-      padding:18px 20px;
-      font-size:0.95rem;
-      letter-spacing:.02em;
-    }
-
-    tbody td{
-      padding:18px 20px;
-      border-bottom:1px solid rgba(69,104,37,0.09);
-      vertical-align:top;
-    }
-
-    tbody tr:nth-child(even){
-      background:rgba(238,245,232,0.42);
     }
 
     .studio-grid{
@@ -745,27 +774,11 @@
       text-transform:uppercase;
       font-size:0.82rem;
       position:relative;
-      padding:0 28px;
       line-height:1.1;
       background:var(--green-soft);
       border:1px solid rgba(197,165,106,0.34);
       border-radius:999px;
-      padding-top:9px;
-      padding-bottom:9px;
-      padding-left:18px;
-      padding-right:18px;
-    }
-
-    .gift-kicker::before,
-    .gift-kicker::after{
-      content:"✦";
-      color:var(--gold);
-      font-size:0.82rem;
-      line-height:1;
-      position:static;
-    }
-
-    .gift-kicker{
+      padding:9px 18px;
       gap:4px;
     }
 
@@ -911,6 +924,7 @@
 
       .hero-facts,
       .about-points,
+      .about-highlight,
       .services-grid,
       .studio-grid{
         grid-template-columns:1fr;
@@ -1086,22 +1100,44 @@
           </div>
 
           <div class="card about-copy">
-            <h3>Wellness mit persönlicher Note</h3>
+            <span class="about-mini-kicker">Tradition & Herzlichkeit</span>
+
+            <h3>Traditionelle Thai-Massage mit persönlicher Atmosphäre</h3>
+
             <p>
-              Die Inhaberin gibt dem Studio ein authentisches Gesicht und sorgt für
-              eine persönliche, vertrauensvolle Atmosphäre.
+              Bei Kiaw Thaimassage & Wellness stehen Ruhe, Achtsamkeit und eine
+              persönliche Betreuung im Mittelpunkt. Die traditionelle Thai-Massage
+              verbindet bewährte Techniken mit einem harmonischen Ambiente, in dem
+              man vom ersten Moment an abschalten kann.
             </p>
+
             <p>
-              Von klassischer Thai-Massage über Aromaöl bis zu Hot Stone und
-              Kräuterstempeln entsteht ein Angebot, das Entspannung und Qualität
-              überzeugend miteinander verbindet.
+              Die Verbindung aus authentischer Anwendung, freundlicher Betreuung und
+              stilvoller Umgebung schafft einen Ort, an dem Entspannung, Regeneration
+              und Wohlbefinden spürbar werden.
             </p>
+
+            <div class="about-highlight">
+              <div class="about-highlight-item">
+                <strong>Traditionell</strong>
+                <span>Inspiriert von klassischer thailändischer Massagekultur.</span>
+              </div>
+              <div class="about-highlight-item">
+                <strong>Persönlich</strong>
+                <span>Individuelle, vertrauensvolle und ruhige Atmosphäre.</span>
+              </div>
+            </div>
 
             <div class="about-points">
               <div class="about-point">Traditionelle Thai-Massage</div>
               <div class="about-point">Aromaöl & Wellness</div>
               <div class="about-point">Hot Stone Anwendungen</div>
               <div class="about-point">Kräuterstempel-Massage</div>
+            </div>
+
+            <div class="about-note">
+              Ein kleiner Ort zum Abschalten – mit traditionellem Charakter,
+              persönlicher Note und einem hochwertigen Wellnessgefühl.
             </div>
           </div>
         </div>
