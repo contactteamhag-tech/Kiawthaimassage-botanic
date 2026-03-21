@@ -409,7 +409,10 @@
     }
 
     .section-head .kicker{
-      display:inline-block;
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
       margin-bottom:12px;
       color:var(--green-dark);
       font-weight:800;
@@ -417,14 +420,15 @@
       text-transform:uppercase;
       font-size:0.8rem;
       position:relative;
-      padding:0 18px;
+      padding:0 28px;
+      line-height:1.1;
     }
 
     .section-head .kicker::before,
     .section-head .kicker::after{
       content:"✦";
       position:absolute;
-      top:50%;
+      top:0.35em;
       transform:translateY(-50%);
       color:var(--gold);
       font-size:0.78rem;
@@ -438,22 +442,15 @@
       right:0;
     }
 
-    .word-stack{
-      display:inline-flex;
-      flex-direction:column;
-      align-items:center;
-      line-height:1.05;
-    }
-
-    .word-stack-thai{
-      margin-top:10px;
+    .kicker-thai{
+      margin-top:6px;
       font-family:'Noto Serif Thai', serif;
-      font-size:0.42em;
+      font-size:0.9rem;
       font-weight:600;
       letter-spacing:0.01em;
       color:var(--gold);
       text-transform:none;
-      line-height:1.2;
+      line-height:1.1;
     }
 
     .section-head h2{
@@ -734,6 +731,48 @@
     .gift-copy p{
       color:var(--muted);
       margin-bottom:14px;
+    }
+
+    .gift-kicker{
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:16px;
+      color:var(--green-dark);
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:0.82rem;
+      position:relative;
+      padding:0 28px;
+      line-height:1.1;
+      background:var(--green-soft);
+      border:1px solid rgba(197,165,106,0.34);
+      border-radius:999px;
+      padding-top:9px;
+      padding-bottom:9px;
+      padding-left:18px;
+      padding-right:18px;
+    }
+
+    .gift-kicker::before,
+    .gift-kicker::after{
+      content:"✦";
+      color:var(--gold);
+      font-size:0.82rem;
+      line-height:1;
+      position:static;
+    }
+
+    .gift-kicker{
+      gap:4px;
+    }
+
+    .gift-kicker-top{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
     }
 
     .contact-grid{
@@ -1029,14 +1068,11 @@
     <section class="section" id="ueber-uns">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Über uns</span>
+          <span class="kicker">
+            Über uns
+            <span class="kicker-thai">เกี่ยวกับเรา</span>
+          </span>
           <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
-          <p>
-            <span class="word-stack">
-              <span>Über uns</span>
-              <span class="word-stack-thai">เกี่ยวกับเรา</span>
-            </span>
-          </p>
           <p>
             Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
             einem modernen, harmonischen Studio. Die persönliche Note und das
@@ -1075,14 +1111,11 @@
     <section class="section" id="leistungen">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Leistungen</span>
+          <span class="kicker">
+            Leistungen
+            <span class="kicker-thai">บริการ</span>
+          </span>
           <h2>Strukturiert dargestellt und direkt anfragbar</h2>
-          <p>
-            <span class="word-stack">
-              <span>Leistungen</span>
-              <span class="word-stack-thai">บริการ</span>
-            </span>
-          </p>
           <p>
             Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
             verknüpft, damit Besucher sofort handeln können.
@@ -1165,14 +1198,11 @@
     <section class="section" id="studio">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Studio</span>
+          <span class="kicker">
+            Studio
+            <span class="kicker-thai">สตูดิโอ</span>
+          </span>
           <h2>Sauber geordnete Studioeinblicke</h2>
-          <p>
-            <span class="word-stack">
-              <span>Studio</span>
-              <span class="word-stack-thai">สตูดิโอ</span>
-            </span>
-          </p>
           <p>
             Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
           </p>
@@ -1215,14 +1245,11 @@
           </div>
 
           <div class="card gift-copy">
-            <span class="eyebrow">Gutscheine</span>
+            <span class="gift-kicker">
+              <span class="gift-kicker-top">✦ Gutscheine ✦</span>
+              <span class="kicker-thai">บัตรกำนัล</span>
+            </span>
             <h3>Entspannung stilvoll verschenken</h3>
-            <p>
-              <span class="word-stack">
-                <span>Gutscheine</span>
-                <span class="word-stack-thai">บัตรกำนัล</span>
-              </span>
-            </p>
             <p>
               Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
               oder besondere Anlässe.
@@ -1243,14 +1270,11 @@
     <section class="section" id="kontakt">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Kontakt</span>
+          <span class="kicker">
+            Kontakt
+            <span class="kicker-thai">ติดต่อ</span>
+          </span>
           <h2>Direkt anfragen und Standort ansehen</h2>
-          <p>
-            <span class="word-stack">
-              <span>Kontakt</span>
-              <span class="word-stack-thai">ติดต่อ</span>
-            </span>
-          </p>
           <p>
             Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
             Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
