@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+Thai:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet"
   />
 
@@ -154,6 +154,15 @@
       font-weight:800;
       color:var(--green-dark);
       letter-spacing:0.03em;
+      position:relative;
+    }
+
+    .brand-title::after{
+      content:"✦";
+      color:var(--gold);
+      margin-left:8px;
+      font-size:0.9rem;
+      vertical-align:middle;
     }
 
     .brand-sub{
@@ -247,6 +256,18 @@
       border-radius:34px;
       padding:42px;
       box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-copy::before{
+      content:"❈";
+      position:absolute;
+      top:18px;
+      right:24px;
+      color:rgba(197,165,106,0.38);
+      font-size:2rem;
+      pointer-events:none;
     }
 
     .eyebrow{
@@ -261,10 +282,21 @@
       padding:9px 14px;
       margin-bottom:18px;
       text-transform:uppercase;
+      border:1px solid rgba(197,165,106,0.34);
+      position:relative;
+      gap:8px;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after{
+      content:"✦";
+      color:var(--gold);
+      font-size:0.82rem;
+      line-height:1;
     }
 
     .hero h1{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:clamp(2.6rem,5vw,4.9rem);
       line-height:1.03;
       color:#243d18;
@@ -297,6 +329,18 @@
       border-radius:18px;
       padding:16px;
       box-shadow:var(--shadow-soft);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-fact::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:3px;
+      background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,0.92), rgba(197,165,106,0));
     }
 
     .hero-fact strong{
@@ -320,6 +364,16 @@
       overflow:hidden;
       box-shadow:0 28px 70px rgba(28,39,22,0.17);
       background:#e6eddc;
+      position:relative;
+    }
+
+    .hero-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border:1px solid rgba(197,165,106,0.20);
+      border-radius:36px;
+      pointer-events:none;
     }
 
     .hero-image img{
@@ -344,6 +398,7 @@
       color:var(--green-dark);
       font-size:1.08rem;
       margin-bottom:8px;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
     }
 
     .hero-card p{
@@ -369,14 +424,46 @@
       letter-spacing:.08em;
       text-transform:uppercase;
       font-size:0.8rem;
+      position:relative;
+      padding:0 18px;
+    }
+
+    .section-head .kicker::before,
+    .section-head .kicker::after{
+      content:"✦";
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--gold);
+      font-size:0.78rem;
+    }
+
+    .section-head .kicker::before{
+      left:0;
+    }
+
+    .section-head .kicker::after{
+      right:0;
     }
 
     .section-head h2{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:clamp(2rem, 4vw, 3rem);
       line-height:1.08;
       color:#263e1b;
       margin-bottom:14px;
+      position:relative;
+      display:inline-block;
+    }
+
+    .section-head h2::after{
+      content:"";
+      display:block;
+      width:92px;
+      height:2px;
+      margin:12px auto 0;
+      background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,1), rgba(197,165,106,0));
+      border-radius:999px;
     }
 
     .section-head p{
@@ -390,6 +477,16 @@
       border-radius:var(--radius-xl);
       box-shadow:var(--shadow-soft);
       backdrop-filter:blur(6px);
+      position:relative;
+    }
+
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      border:1px solid rgba(197,165,106,0.10);
+      pointer-events:none;
     }
 
     .about-grid{
@@ -417,7 +514,7 @@
     }
 
     .about-copy h3{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:2rem;
       color:var(--green-dark);
       margin-bottom:16px;
@@ -442,6 +539,18 @@
       padding:16px;
       font-weight:700;
       color:#314227;
+      position:relative;
+      padding-left:42px;
+    }
+
+    .about-point::before{
+      content:"✦";
+      position:absolute;
+      left:16px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--gold);
+      font-size:0.95rem;
     }
 
     .services-grid{
@@ -463,7 +572,7 @@
     }
 
     .service-card h3{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:1.5rem;
       color:#29401d;
     }
@@ -476,6 +585,7 @@
       padding:8px 12px;
       font-size:0.82rem;
       font-weight:800;
+      border:1px solid rgba(197,165,106,0.34);
     }
 
     .service-card p{
@@ -581,6 +691,7 @@
       font-weight:800;
       font-size:0.88rem;
       box-shadow:var(--shadow-soft);
+      border:1px solid rgba(197,165,106,0.26);
     }
 
     .gift-grid{
@@ -605,7 +716,7 @@
     }
 
     .gift-copy h3{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:2rem;
       color:var(--green-dark);
       margin-bottom:14px;
@@ -628,7 +739,7 @@
     }
 
     .contact-card h3{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
       font-size:1.85rem;
       color:var(--green-dark);
       margin-bottom:18px;
@@ -861,13 +972,13 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Relax & Rejuvenate</span>
+          <span class="eyebrow">Thai Wellness in Frechen</span>
           <h1>Traditionelle Thai Massage in stilvoller und ruhiger Atmosphäre</h1>
           <p>
-            Kiaw Thaimassage & Wellness in Frechen steht für authentische Anwendungen,
-            eine ruhige Studioatmosphäre und einen hochwertigen Auftritt. Die Seite ist
-            darauf ausgelegt, Vertrauen aufzubauen und direkte Anfragen per WhatsApp
-            oder Telefon zu fördern.
+            Willkommen bei Kiaw Thaimassage & Wellness in Frechen. In harmonischem Ambiente
+            erleben Sie authentische Anwendungen, wohltuende Ruhe und individuelle Entspannung.
+            Ob kleine Auszeit oder längere Regeneration – hier stehen Wohlbefinden, Qualität
+            und persönliche Betreuung im Mittelpunkt.
           </p>
 
           <div class="hero-actions">
@@ -878,15 +989,15 @@
           <div class="hero-facts">
             <div class="hero-fact">
               <strong>Authentisch</strong>
-              <span>Traditionelle Anwendungen mit Wellness-Fokus.</span>
+              <span>Traditionelle Anwendungen mit Gefühl, Erfahrung und Ruhe.</span>
             </div>
             <div class="hero-fact">
               <strong>Stilvoll</strong>
-              <span>Gepflegte Räume und hochwertige Präsentation.</span>
+              <span>Ein gepflegtes Studio mit angenehmer und entspannter Atmosphäre.</span>
             </div>
             <div class="hero-fact">
-              <strong>Direkt buchbar</strong>
-              <span>Kontakt ohne Umwege per WhatsApp oder Telefon.</span>
+              <strong>Direkt erreichbar</strong>
+              <span>Terminanfragen schnell und unkompliziert per WhatsApp oder Telefon.</span>
             </div>
           </div>
         </div>
@@ -896,10 +1007,10 @@
             <img src="images/raum1.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
           </div>
           <div class="hero-card">
-            <h3>Ruhe, Qualität und Wohlbefinden</h3>
+            <h3>Ruhe, Wärme und neue Energie</h3>
             <p>
-              Ein harmonischer erster Eindruck schafft Vertrauen und vermittelt direkt
-              die entspannte Atmosphäre des Studios.
+              Ein Ort zum Abschalten, Loslassen und Wohlfühlen – mit entspannter Atmosphäre
+              vom ersten Moment an.
             </p>
           </div>
         </div>
@@ -910,11 +1021,11 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Über uns</span>
-          <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
+          <h2>Tradition, Achtsamkeit und Wohlbefinden in harmonischem Ambiente</h2>
           <p>
-            Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
-            einem modernen, harmonischen Studio. Die persönliche Note und das
-            hochwertige Ambiente schaffen Vertrauen vom ersten Eindruck an.
+            Kiaw Thaimassage & Wellness verbindet traditionelle Thai-Massage mit einer ruhigen,
+            gepflegten Studioatmosphäre. Jede Anwendung ist darauf ausgerichtet, Körper und Geist
+            in Einklang zu bringen und Ihnen eine entspannte Auszeit vom Alltag zu schenken.
           </p>
         </div>
 
@@ -924,15 +1035,16 @@
           </div>
 
           <div class="card about-copy">
-            <h3>Wellness mit persönlicher Note</h3>
+            <h3>Persönliche Betreuung mit echter Wohlfühlatmosphäre</h3>
             <p>
-              Die Inhaberin gibt dem Studio ein authentisches Gesicht und sorgt für
-              eine persönliche, vertrauensvolle Atmosphäre.
+              Bei Kiaw Thaimassage & Wellness erwarten Sie Herzlichkeit, Ruhe und eine persönliche
+              Betreuung, die Ihre Auszeit besonders angenehm macht. Das stilvolle Studio schafft
+              den passenden Rahmen für Entspannung, Regeneration und neue Balance.
             </p>
             <p>
-              Von klassischer Thai-Massage über Aromaöl bis zu Hot Stone und
-              Kräuterstempeln entsteht ein Angebot, das Entspannung und Qualität
-              überzeugend miteinander verbindet.
+              Von klassischer Thai-Massage über Aromaöl-Anwendungen bis hin zu Hot Stone und
+              Kräuterstempel-Massagen bietet das Studio vielseitige Behandlungen für wohltuende
+              Momente und spürbares Wohlbefinden.
             </p>
 
             <div class="about-points">
@@ -950,10 +1062,10 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Leistungen</span>
-          <h2>Strukturiert dargestellt und direkt anfragbar</h2>
+          <h2>Wohltuende Anwendungen für Entspannung und neue Balance</h2>
           <p>
-            Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
-            verknüpft, damit Besucher sofort handeln können.
+            Entdecken Sie ausgewählte Massagen für Regeneration, Lockerung und Wohlbefinden.
+            Alle Behandlungen können direkt per WhatsApp oder telefonisch angefragt werden.
           </p>
         </div>
 
@@ -963,7 +1075,7 @@
               <h3>Thaimassage / mit oder ohne Massageöl</h3>
               <span class="badge">Klassiker</span>
             </div>
-            <p>Klassische Thai-Massage mit entspannender und aktivierender Wirkung.</p>
+            <p>Traditionelle Anwendung zur Lockerung, Aktivierung und wohltuenden Entspannung des gesamten Körpers.</p>
             <div class="service-prices">
               <div><span>30 Minuten</span><span>29 €</span></div>
               <div><span>60 Minuten</span><span>45 €</span></div>
@@ -981,7 +1093,7 @@
               <h3>Wellness-Aromaöl-Massage</h3>
               <span class="badge">Wellness</span>
             </div>
-            <p>Sanfte Anwendung mit Öl für ein ruhiges, fließendes Entspannungserlebnis.</p>
+            <p>Sanfte, fließende Massage mit Öl für tiefe Entspannung, innere Ruhe und ein angenehmes Körpergefühl.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>53 €</span></div>
               <div><span>90 Minuten</span><span>73 €</span></div>
@@ -998,7 +1110,7 @@
               <h3>Entspannende Kräuterstempel-Massage</h3>
               <span class="badge">Premium</span>
             </div>
-            <p>Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.</p>
+            <p>Wärmende Kräuterstempel sorgen für ein intensives Wellness-Erlebnis mit besonderer Tiefe und Ruhe.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -1015,7 +1127,7 @@
               <h3>Wärmende Hotstone-Massage</h3>
               <span class="badge">Beliebt</span>
             </div>
-            <p>Tiefenentspannung durch Wärme und eine ruhige, hochwertige Anwendung.</p>
+            <p>Wohltuende Wärme und ruhige Massagegriffe unterstützen tiefe Entspannung und ein angenehmes Loslassen.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -1034,9 +1146,10 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Studio</span>
-          <h2>Sauber geordnete Studioeinblicke</h2>
+          <h2>Einblicke in eine ruhige und gepflegte Wohlfühlatmosphäre</h2>
           <p>
-            Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
+            Helle Räume, warme Details und ein harmonisches Ambiente schaffen den passenden Rahmen
+            für entspannte Behandlungen und erholsame Momente.
           </p>
         </div>
 
@@ -1080,11 +1193,12 @@
             <span class="eyebrow">Gutscheine</span>
             <h3>Entspannung stilvoll verschenken</h3>
             <p>
-              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
-              oder besondere Anlässe.
+              Ein Gutschein von Kiaw Thaimassage & Wellness ist eine besondere Geschenkidee
+              für Geburtstage, Feiertage und viele weitere Anlässe.
             </p>
             <p>
-              Die Anfrage erfolgt direkt per WhatsApp oder telefonisch.
+              Verschenken Sie wohltuende Zeit, Ruhe und echte Wellnessmomente – direkt
+              anfragbar per WhatsApp oder telefonisch.
             </p>
 
             <div class="hero-actions" style="margin-top:20px;">
@@ -1100,10 +1214,10 @@
       <div class="container">
         <div class="section-head">
           <span class="kicker">Kontakt</span>
-          <h2>Direkt anfragen und Standort ansehen</h2>
+          <h2>Jetzt Termin anfragen und den Standort direkt finden</h2>
           <p>
-            Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
-            Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
+            Für Terminwünsche, Fragen oder Gutscheinanfragen erreichen Sie Kiaw Thaimassage & Wellness
+            schnell und unkompliziert per WhatsApp oder Telefon. Den Standort finden Sie direkt auf der Karte.
           </p>
         </div>
 
