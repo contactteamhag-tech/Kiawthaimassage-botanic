@@ -154,15 +154,6 @@
       font-weight:800;
       color:var(--green-dark);
       letter-spacing:0.03em;
-      position:relative;
-    }
-
-    .brand-title::after{
-      content:"✦";
-      color:var(--gold);
-      margin-left:8px;
-      font-size:0.9rem;
-      vertical-align:middle;
     }
 
     .brand-sub{
@@ -211,6 +202,7 @@
       color:var(--gold);
       margin-top:4px;
       letter-spacing:0.01em;
+      line-height:1.15;
     }
 
     .header-actions{
@@ -270,18 +262,6 @@
       border-radius:34px;
       padding:42px;
       box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .hero-copy::before{
-      content:"❈";
-      position:absolute;
-      top:18px;
-      right:24px;
-      color:rgba(197,165,106,0.38);
-      font-size:2rem;
-      pointer-events:none;
     }
 
     .eyebrow{
@@ -297,7 +277,6 @@
       margin-bottom:18px;
       text-transform:uppercase;
       border:1px solid rgba(197,165,106,0.34);
-      position:relative;
       gap:8px;
     }
 
@@ -344,7 +323,6 @@
       padding:16px;
       box-shadow:var(--shadow-soft);
       position:relative;
-      overflow:hidden;
     }
 
     .hero-fact::before{
@@ -355,6 +333,7 @@
       width:100%;
       height:3px;
       background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,0.92), rgba(197,165,106,0));
+      border-radius:18px 18px 0 0;
     }
 
     .hero-fact strong{
@@ -467,8 +446,6 @@
       color:#263e1b;
       margin-bottom:14px;
       position:relative;
-      display:inline-block;
-      text-transform:uppercase;
     }
 
     .section-head h2::after{
@@ -484,7 +461,7 @@
     .section-thai{
       display:block;
       margin-top:10px;
-      font-family:'Noto Serif Thai',serif;
+      font-family:'Noto Serif Thai', serif;
       font-size:0.42em;
       font-weight:600;
       letter-spacing:0.01em;
@@ -747,16 +724,9 @@
       font-size:2rem;
       color:var(--green-dark);
       margin-bottom:14px;
-      text-transform:uppercase;
     }
 
-    .gift-copy p{
-      color:var(--muted);
-      margin-bottom:14px;
-    }
-
-    .gift-copy h3 .section-thai,
-    .contact-card h3 .section-thai{
+    .gift-copy h3 .section-thai{
       display:block;
       margin-top:10px;
       font-family:'Noto Serif Thai', serif;
@@ -765,6 +735,11 @@
       color:var(--gold);
       line-height:1.2;
       text-transform:none;
+    }
+
+    .gift-copy p{
+      color:var(--muted);
+      margin-bottom:14px;
     }
 
     .contact-grid{
@@ -994,11 +969,11 @@
       </a>
 
       <nav class="nav">
-        <a href="#ueber-uns">Über uns<br><span class="nav-thai">เกี่ยวกับเรา</span></a>
-        <a href="#leistungen">Leistungen<br><span class="nav-thai">บริการ</span></a>
-        <a href="#studio">Studio<br><span class="nav-thai">สตูดิโอ</span></a>
-        <a href="#gutscheine">Gutscheine<br><span class="nav-thai">บัตรกำนัล</span></a>
-        <a href="#kontakt">Kontakt<br><span class="nav-thai">ติดต่อ</span></a>
+        <a href="#ueber-uns">Über uns<span class="nav-thai">เกี่ยวกับเรา</span></a>
+        <a href="#leistungen">Leistungen<span class="nav-thai">บริการ</span></a>
+        <a href="#studio">Studio<span class="nav-thai">สตูดิโอ</span></a>
+        <a href="#gutscheine">Gutscheine<span class="nav-thai">บัตรกำนัล</span></a>
+        <a href="#kontakt">Kontakt<span class="nav-thai">ติดต่อ</span></a>
       </nav>
 
       <div class="header-actions">
@@ -1012,13 +987,13 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Thai Wellness in Frechen</span>
+          <span class="eyebrow">Relax & Rejuvenate</span>
           <h1>Traditionelle Thai Massage in stilvoller und ruhiger Atmosphäre</h1>
           <p>
-            Willkommen bei Kiaw Thaimassage & Wellness in Frechen. In harmonischem Ambiente
-            erleben Sie authentische Anwendungen, wohltuende Ruhe und individuelle Entspannung.
-            Ob kleine Auszeit oder längere Regeneration – hier stehen Wohlbefinden, Qualität
-            und persönliche Betreuung im Mittelpunkt.
+            Kiaw Thaimassage & Wellness in Frechen steht für authentische Anwendungen,
+            eine ruhige Studioatmosphäre und einen hochwertigen Auftritt. Die Seite ist
+            darauf ausgelegt, Vertrauen aufzubauen und direkte Anfragen per WhatsApp
+            oder Telefon zu fördern.
           </p>
 
           <div class="hero-actions">
@@ -1029,15 +1004,15 @@
           <div class="hero-facts">
             <div class="hero-fact">
               <strong>Authentisch</strong>
-              <span>Traditionelle Anwendungen mit Gefühl, Erfahrung und Ruhe.</span>
+              <span>Traditionelle Anwendungen mit Wellness-Fokus.</span>
             </div>
             <div class="hero-fact">
               <strong>Stilvoll</strong>
-              <span>Ein gepflegtes Studio mit angenehmer und entspannter Atmosphäre.</span>
+              <span>Gepflegte Räume und hochwertige Präsentation.</span>
             </div>
             <div class="hero-fact">
-              <strong>Direkt erreichbar</strong>
-              <span>Terminanfragen schnell und unkompliziert per WhatsApp oder Telefon.</span>
+              <strong>Direkt buchbar</strong>
+              <span>Kontakt ohne Umwege per WhatsApp oder Telefon.</span>
             </div>
           </div>
         </div>
@@ -1047,10 +1022,10 @@
             <img src="images/raum1.jpg" alt="Behandlungsraum von Kiaw Thaimassage" />
           </div>
           <div class="hero-card">
-            <h3>Ruhe, Wärme und neue Energie</h3>
+            <h3>Ruhe, Qualität und Wohlbefinden</h3>
             <p>
-              Ein Ort zum Abschalten, Loslassen und Wohlfühlen – mit entspannter Atmosphäre
-              vom ersten Moment an.
+              Ein harmonischer erster Eindruck schafft Vertrauen und vermittelt direkt
+              die entspannte Atmosphäre des Studios.
             </p>
           </div>
         </div>
@@ -1062,13 +1037,13 @@
         <div class="section-head">
           <span class="kicker">Über uns</span>
           <h2>
-            Über uns
+            Persönlich, hochwertig und auf Entspannung ausgerichtet
             <span class="section-thai">เกี่ยวกับเรา</span>
           </h2>
           <p>
-            Kiaw Thaimassage & Wellness verbindet traditionelle Thai-Massage mit einer ruhigen,
-            gepflegten Studioatmosphäre. Jede Anwendung ist darauf ausgerichtet, Körper und Geist
-            in Einklang zu bringen und Ihnen eine entspannte Auszeit vom Alltag zu schenken.
+            Kiaw Thaimassage & Wellness verbindet traditionelle Massagekultur mit
+            einem modernen, harmonischen Studio. Die persönliche Note und das
+            hochwertige Ambiente schaffen Vertrauen vom ersten Eindruck an.
           </p>
         </div>
 
@@ -1078,16 +1053,15 @@
           </div>
 
           <div class="card about-copy">
-            <h3>Persönliche Betreuung mit echter Wohlfühlatmosphäre</h3>
+            <h3>Wellness mit persönlicher Note</h3>
             <p>
-              Bei Kiaw Thaimassage & Wellness erwarten Sie Herzlichkeit, Ruhe und eine persönliche
-              Betreuung, die Ihre Auszeit besonders angenehm macht. Das stilvolle Studio schafft
-              den passenden Rahmen für Entspannung, Regeneration und neue Balance.
+              Die Inhaberin gibt dem Studio ein authentisches Gesicht und sorgt für
+              eine persönliche, vertrauensvolle Atmosphäre.
             </p>
             <p>
-              Von klassischer Thai-Massage über Aromaöl-Anwendungen bis hin zu Hot Stone und
-              Kräuterstempel-Massagen bietet das Studio vielseitige Behandlungen für wohltuende
-              Momente und spürbares Wohlbefinden.
+              Von klassischer Thai-Massage über Aromaöl bis zu Hot Stone und
+              Kräuterstempeln entsteht ein Angebot, das Entspannung und Qualität
+              überzeugend miteinander verbindet.
             </p>
 
             <div class="about-points">
@@ -1106,12 +1080,12 @@
         <div class="section-head">
           <span class="kicker">Leistungen</span>
           <h2>
-            Leistungen
+            Strukturiert dargestellt und direkt anfragbar
             <span class="section-thai">บริการ</span>
           </h2>
           <p>
-            Entdecken Sie ausgewählte Massagen für Regeneration, Lockerung und Wohlbefinden.
-            Alle Behandlungen können direkt per WhatsApp oder telefonisch angefragt werden.
+            Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
+            verknüpft, damit Besucher sofort handeln können.
           </p>
         </div>
 
@@ -1121,7 +1095,7 @@
               <h3>Thaimassage / mit oder ohne Massageöl</h3>
               <span class="badge">Klassiker</span>
             </div>
-            <p>Traditionelle Anwendung zur Lockerung, Aktivierung und wohltuenden Entspannung des gesamten Körpers.</p>
+            <p>Klassische Thai-Massage mit entspannender und aktivierender Wirkung.</p>
             <div class="service-prices">
               <div><span>30 Minuten</span><span>29 €</span></div>
               <div><span>60 Minuten</span><span>45 €</span></div>
@@ -1139,7 +1113,7 @@
               <h3>Wellness-Aromaöl-Massage</h3>
               <span class="badge">Wellness</span>
             </div>
-            <p>Sanfte, fließende Massage mit Öl für tiefe Entspannung, innere Ruhe und ein angenehmes Körpergefühl.</p>
+            <p>Sanfte Anwendung mit Öl für ein ruhiges, fließendes Entspannungserlebnis.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>53 €</span></div>
               <div><span>90 Minuten</span><span>73 €</span></div>
@@ -1156,7 +1130,7 @@
               <h3>Entspannende Kräuterstempel-Massage</h3>
               <span class="badge">Premium</span>
             </div>
-            <p>Wärmende Kräuterstempel sorgen für ein intensives Wellness-Erlebnis mit besonderer Tiefe und Ruhe.</p>
+            <p>Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -1173,7 +1147,7 @@
               <h3>Wärmende Hotstone-Massage</h3>
               <span class="badge">Beliebt</span>
             </div>
-            <p>Wohltuende Wärme und ruhige Massagegriffe unterstützen tiefe Entspannung und ein angenehmes Loslassen.</p>
+            <p>Tiefenentspannung durch Wärme und eine ruhige, hochwertige Anwendung.</p>
             <div class="service-prices">
               <div><span>60 Minuten</span><span>59 €</span></div>
               <div><span>90 Minuten</span><span>85 €</span></div>
@@ -1193,12 +1167,11 @@
         <div class="section-head">
           <span class="kicker">Studio</span>
           <h2>
-            Studio
+            Sauber geordnete Studioeinblicke
             <span class="section-thai">สตูดิโอ</span>
           </h2>
           <p>
-            Helle Räume, warme Details und ein harmonisches Ambiente schaffen den passenden Rahmen
-            für entspannte Behandlungen und erholsame Momente.
+            Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
           </p>
         </div>
 
@@ -1241,16 +1214,15 @@
           <div class="card gift-copy">
             <span class="eyebrow">Gutscheine</span>
             <h3>
-              Gutscheine
+              Entspannung stilvoll verschenken
               <span class="section-thai">บัตรกำนัล</span>
             </h3>
             <p>
-              Ein Gutschein von Kiaw Thaimassage & Wellness ist eine besondere Geschenkidee
-              für Geburtstage, Feiertage und viele weitere Anlässe.
+              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
+              oder besondere Anlässe.
             </p>
             <p>
-              Verschenken Sie wohltuende Zeit, Ruhe und echte Wellnessmomente – direkt
-              anfragbar per WhatsApp oder telefonisch.
+              Die Anfrage erfolgt direkt per WhatsApp oder telefonisch.
             </p>
 
             <div class="hero-actions" style="margin-top:20px;">
@@ -1267,12 +1239,12 @@
         <div class="section-head">
           <span class="kicker">Kontakt</span>
           <h2>
-            Kontakt
+            Direkt anfragen und Standort ansehen
             <span class="section-thai">ติดต่อ</span>
           </h2>
           <p>
-            Für Terminwünsche, Fragen oder Gutscheinanfragen erreichen Sie Kiaw Thaimassage & Wellness
-            schnell und unkompliziert per WhatsApp oder Telefon. Den Standort finden Sie direkt auf der Karte.
+            Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
+            Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
           </p>
         </div>
 
