@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Kiaw Thaimassage & Wellness – Entspannung in Frechen</title>
+
+<meta name="description" content="Kiaw Thaimassage & Wellness in Frechen – Traditionelle Thai Massagen, Aromaöl, Hot Stone und Kräuterstempel. Jetzt Termin sichern." />
+<meta name="theme-color" content="#2e7d32" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#2e7d32;
+  --light:#f8f8f8;
+  --gold:#c8a96a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  color:#222;
+  background:url("images/patternkiaw.webp") repeat;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:white;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+  z-index:1000;
+}
+
+nav img{
+  height:50px;
+}
+
+nav a{
+  margin-left:30px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/raum1.jpg") center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h1{
+  font-family:'Playfair Display';
+  font-size:60px;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:18px;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:15px 35px;
+  background:var(--green);
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 10%;
+}
+
+h2{
+  font-family:'Playfair Display';
+  font-size:40px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+.about img{
+  width:400px;
+  border-radius:20px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* PRICE */
+.price{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+/* CTA */
+.cta{
+  background:var(--green);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#aaa;
+  padding:40px;
+  text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <img src="images/logokiaw.png" alt="Logo">
+  <div>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#preise">Preise</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Relax & Rejuvenate</h1>
+    <p>Traditionelle Thai Massage in Frechen</p>
+    <a href="#kontakt" class="btn">Jetzt Termin sichern</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <img src="images/inhaberin.png" alt="">
+  <div>
+    <h2>Über uns</h2>
+    <p>
+      Bei Kiaw Thaimassage & Wellness erleben Sie authentische Entspannung auf höchstem Niveau.
+      Unsere Behandlungen verbinden traditionelle Techniken mit modernen Wellnesskonzepten.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="leistungen">
+  <h2>Unsere Leistungen</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Traditionelle Thai Massage</h3>
+      <p>Tiefenentspannung und Aktivierung der Energiepunkte</p>
+    </div>
+
+    <div class="card">
+      <h3>Aromaöl Massage</h3>
+      <p>Sanfte Massage mit hochwertigen Ölen</p>
+    </div>
+
+    <div class="card">
+      <h3>Kräuterstempel</h3>
+      <p>Wärmende Behandlung für Muskeln & Gelenke</p>
+    </div>
+
+    <div class="card">
+      <h3>Hot Stone</h3>
+      <p>Intensive Entspannung durch warme Steine</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section id="preise">
+  <h2>Preise</h2>
+
+  <div class="price">
+    <img src="images/preise.jpg" style="width:100%;border-radius:15px;">
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="galerie">
+  <h2>Einblicke</h2>
+
+  <div class="gallery">
+    <img src="images/raum1.jpg">
+    <img src="images/raum2.jpg">
+    <img src="images/kraeuterstempel.jpg">
+    <img src="images/gutschein.jpg">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Jetzt entspannen</h2>
+  <p>Rufen Sie uns an und sichern Sie sich Ihren Termin</p>
+  <a href="tel:022349331475" class="btn">Jetzt anrufen</a>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+  <p><strong>Kiaw Thaimassage & Wellness</strong></p>
+  <p>Franz-Hennes-Str. 41, 50226 Frechen</p>
+  <p>Tel: 02234 9331475</p>
+  <p>Email: prayoon.hanjoh@gmail.com</p>
+</footer>
+
+</body>
+</html>
