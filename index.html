@@ -788,6 +788,104 @@
       gap:8px;
     }
 
+    .reviews-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:22px;
+    }
+
+    .review-card{
+      padding:26px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+
+    .review-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .review-user{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .review-avatar{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      background:linear-gradient(135deg, #dcebcf, #b8d29a);
+      color:var(--green-dark);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-size:1rem;
+      flex-shrink:0;
+      border:1px solid rgba(69,104,37,0.14);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .review-meta{
+      min-width:0;
+    }
+
+    .review-name{
+      font-weight:800;
+      color:#2d4021;
+      font-size:1rem;
+      line-height:1.2;
+    }
+
+    .review-source{
+      font-size:0.84rem;
+      color:var(--muted);
+      font-weight:600;
+      margin-top:2px;
+    }
+
+    .google-badge{
+      flex-shrink:0;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      background:#fff;
+      border:1px solid rgba(69,104,37,0.10);
+      font-weight:800;
+      color:#4285F4;
+      box-shadow:var(--shadow-soft);
+      font-size:1rem;
+    }
+
+    .review-stars{
+      color:#f4b400;
+      letter-spacing:2px;
+      font-size:1rem;
+      font-weight:800;
+    }
+
+    .review-text{
+      color:#4f5849;
+      font-size:0.98rem;
+      line-height:1.72;
+      flex:1;
+    }
+
+    .review-note{
+      font-size:0.8rem;
+      color:#7b8475;
+      border-top:1px dashed rgba(69,104,37,0.14);
+      padding-top:12px;
+    }
+
     .contact-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -882,6 +980,10 @@
         grid-template-columns:1fr;
       }
 
+      .reviews-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
       .studio-grid{
         grid-template-columns:1fr 1fr;
       }
@@ -926,7 +1028,8 @@
       .about-points,
       .about-highlight,
       .services-grid,
-      .studio-grid{
+      .studio-grid,
+      .reviews-grid{
         grid-template-columns:1fr;
       }
 
@@ -957,6 +1060,7 @@
       .about-copy,
       .service-card,
       .gift-copy,
+      .review-card,
       .contact-card{
         padding:24px 20px;
       }
@@ -1020,6 +1124,7 @@
         <a href="#leistungen">Leistungen<span class="nav-thai">บริการ</span></a>
         <a href="#studio">Studio<span class="nav-thai">สตูดิโอ</span></a>
         <a href="#gutscheine">Gutscheine<span class="nav-thai">บัตรกำนัล</span></a>
+        <a href="#bewertungen">Rezensionen<span class="nav-thai">รีวิว</span></a>
         <a href="#kontakt">Kontakt<span class="nav-thai">ติดต่อ</span></a>
       </nav>
 
@@ -1299,6 +1404,98 @@
               <a class="btn btn-secondary" href="tel:022349331475">Telefonisch anfragen</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bewertungen">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">
+            Rezensionen
+            <span class="kicker-thai">รีวิว</span>
+          </span>
+          <h2>Erfahrungen, die Vertrauen schaffen</h2>
+          <p>
+            Bewertungen direkt vor dem Kontaktbereich stärken Vertrauen und unterstützen
+            die Entscheidung zur Terminvereinbarung.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">GA</div>
+                <div class="review-meta">
+                  <div class="review-name">Gast</div>
+                  <div class="review-source">Öffentlich sichtbare Bewertung</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              „Sehr netter kleiner Laden in Frechen Zentrum mit Wohlfühlambiente.
+              Kiaw ist eine wunderbare, sehr freundliche und nette Masseurin.
+              Ich kann die Thai Massage sehr empfehlen.“
+            </p>
+
+            <div class="review-note">
+              Diese Rezension ist öffentlich auf Bewertungsportalen als 5-Sterne-Bewertung mit Text sichtbar.
+            </div>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">KH</div>
+                <div class="review-meta">
+                  <div class="review-name">Kundenstimme 2</div>
+                  <div class="review-source">Google Rezension einfügen</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              Hier die zweite echte Google-Rezension aus dem Google-Business-Profil einfügen.
+              Das Layout ist bereits fertig gestaltet und kann sofort live verwendet werden.
+            </p>
+
+            <div class="review-note">
+              Name, Text und Initialen direkt durch die echte Rezension ersetzen.
+            </div>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">MS</div>
+                <div class="review-meta">
+                  <div class="review-name">Kundenstimme 3</div>
+                  <div class="review-source">Google Rezension einfügen</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              Hier die dritte echte Google-Rezension einfügen. Die Karten sind bewusst
+              im professionellen Google-Style vorbereitet, damit du nur noch Namen
+              und Text austauschen musst.
+            </p>
+
+            <div class="review-note">
+              Profilkreis über die Initialen steuern, z. B. „MS“ für Max Mustermann.
+            </div>
+          </article>
         </div>
       </div>
     </section>
